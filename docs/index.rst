@@ -22,10 +22,7 @@ Neuron can be used in a variety of ways, this documentation represent the differ
    :maxdepth: 2
    :caption: HowTo Guides
 
-   install
-   Deploying Neuron TensorFlow Application <neuron-sdk>
-   Deploying Neuron PyTorch Application <neuron-sdk>
-   Deploying Neuron MXNet Application <neuron-sdk>
+   howto/index
    
 
 .. toctree::
