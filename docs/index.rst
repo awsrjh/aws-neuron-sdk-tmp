@@ -48,8 +48,10 @@ Neuron can be used in a variety of ways, this documentation represent the differ
 
 .. toctree::
    :maxdepth: 2
-   :caption: Neuron Deployment
+   :caption: Neuron Containers
    
-   neuron-container-tools/index
+   neuron-container-tools/overview
+   neuron-container-tools/tutorials
+   neuron-container-tools/rn
 
 
