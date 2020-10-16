@@ -48,7 +48,7 @@ templates_path = ['_templates']
 #exclude_patterns = []
 exclude_patterns = ['_build', '**.ipynb_checkpoints']
 
-html_logo = 'images/Site-Merch_Neuron-ML-SDK_Editorial.png'
+html_logo = 'images/Site-Merch_Neuron-ML-SDK_Editorial.jpg'
 
 # -- Options for HTML output -------------------------------------------------
 
