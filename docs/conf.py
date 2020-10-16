@@ -22,6 +22,7 @@ sys.path.insert(0, os.path.abspath(os.path.join('.','..', '..', 'src')))
 project = 'AWS Neuron'
 copyright = '2020, Amazon Web Services'
 author = 'Maen Suleiman'
+master_doc = 'index'
 
 # The full version, including alpha/beta/rc tags
 release = '1.8.0'
