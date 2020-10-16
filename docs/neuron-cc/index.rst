@@ -8,4 +8,5 @@ Neuron Compiler
 
    overview
    command-line-reference
+   faq
    rn
