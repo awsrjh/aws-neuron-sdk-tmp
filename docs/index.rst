@@ -22,7 +22,7 @@ Neuron can be used in a variety of ways, this documentation represent the differ
    :maxdepth: 2
    :caption: HowTo Guides
 
-   howto/index
+   howtos/index
    
 
 .. toctree::
