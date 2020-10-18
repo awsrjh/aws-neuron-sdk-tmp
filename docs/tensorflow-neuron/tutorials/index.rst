@@ -16,6 +16,7 @@ TensorFlow Tutorials
    yolo_v3_demo
    ssd300_demo
    openpose_demo
+   keras_resnet50
 
 
 .. toctree::
