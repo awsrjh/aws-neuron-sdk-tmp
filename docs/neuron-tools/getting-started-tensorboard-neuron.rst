@@ -1,3 +1,5 @@
+.. _tensorboard-neuron:
+
 Getting Started: TensorBoard-Neuron
 ===================================
 

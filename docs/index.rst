@@ -11,6 +11,7 @@ AWS Neuron is an SDK for Amazon machine-learning chips, enabling high-performanc
    :caption: Introduction
 
    neuron-sdk
+   get-started
    FAQ <FAQ>
    Contributing Guidelines <CONTRIBUTING>
    Roadmap <roadmap-readme>
@@ -20,10 +21,10 @@ AWS Neuron is an SDK for Amazon machine-learning chips, enabling high-performanc
    :maxdepth: 2
    :caption: HowTo Guides
 
-   howtos/install
-   Deploying Neuron TensorFlow <howtos/howto_empty>
-   Deploying Neuron PyTorch <howtos/howto_empty>
-   Deploying Neuron MXNet <howtos/howto_empty>
+   howtos/install/index
+   howtos/deploy/index
+   howtos/perf/index
+   howtos/prof/index
    
 
 .. toctree::
@@ -48,8 +49,6 @@ AWS Neuron is an SDK for Amazon machine-learning chips, enabling high-performanc
    :maxdepth: 2
    :caption: Neuron Containers
    
-   neuron-container-tools/overview
-   neuron-container-tools/tutorials
-   neuron-container-tools/rn
+   neuron-container-tools/index
 
 

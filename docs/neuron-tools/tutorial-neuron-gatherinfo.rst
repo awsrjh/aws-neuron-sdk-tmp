@@ -1,3 +1,5 @@
+.. _neuron_gatherinfo:
+
 Using Neuron GatherInfo Tool to collect debug and support information
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

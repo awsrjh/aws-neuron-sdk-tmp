@@ -1,7 +1,7 @@
-.. _technote-pipeline:
+.. _neuroncore-pipeline:
 
-Tech Note: NeuronCore Pipeline
-==============================
+NeuronCore Pipeline
+===================
 
 The Neuron software feature referred to as a NeuronCore Pipeline refers
 to the process of sharding a compute-graph across multiple NeuronCores,

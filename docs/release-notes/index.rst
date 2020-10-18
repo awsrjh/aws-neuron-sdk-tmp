@@ -7,7 +7,8 @@ Release notes
 
    README
    dlami-release-notes
-   neuron-cc-ops/neuron-cc-ops-onnx
+   neuron-cc-ops/index
+
 
 
 

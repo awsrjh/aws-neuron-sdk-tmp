@@ -1,3 +1,5 @@
+.. _tensorflow-tutorials:
+
 TensorFlow Tutorials
 ====================
 
@@ -6,6 +8,8 @@ TensorFlow Tutorials
    :caption: Getting Started
 
    tutorial-tensorflow-compile-infer
+
+.. _tensorflow-computervision:
 
 .. toctree::
    :maxdepth: 1
@@ -18,6 +22,7 @@ TensorFlow Tutorials
    openpose_demo
    keras_resnet50
 
+.. _tensorflow-nlp:
 
 .. toctree::
    :maxdepth: 1
@@ -25,6 +30,7 @@ TensorFlow Tutorials
 
    bert_demo
 
+.. _tensorflow-utilize-neuron:
 
 .. toctree::
    :maxdepth: 1

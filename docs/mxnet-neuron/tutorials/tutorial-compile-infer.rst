@@ -1,5 +1,7 @@
-Tutorial: Using MXNet-Neuron
-============================
+.. _mxnet-resnet50:
+
+Getting Started with MXNet (ResNet50)
+=====================================
 
 Neuron supports Python module, Symbol APIs and the C predict API. The
 following quick start example uses the Symbol API.

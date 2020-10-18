@@ -1,3 +1,5 @@
+.. _neuron-fundamentals:
+
 Neuron Fundamentals
 ===================
 
@@ -9,5 +11,3 @@ Neuron Technical and Application notes provide additional information that help 
    Neuron Data-Types <data-types>
    Neuron Batching <neuroncore-batching>
    NeuronCore Pipeline <neuroncore-pipeline>
-   Performance Tuning <performance-tuning>
-

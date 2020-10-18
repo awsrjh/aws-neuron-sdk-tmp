@@ -1,7 +1,7 @@
-.. _technote-batching:
+.. _neuron-batching:
 
-Tech Note: Batching
-===================
+Neuron Batching
+===============
 
 Batching refers to the process of grouping multiple inference requests
 together and processing them as a group. Batching is typically used as

@@ -1,7 +1,7 @@
-.. _appnote-data-types:
+.. _neuron-data-types:
 
-Application Note: Neuron Data-Types
-===================================
+Neuron Data-Types
+=================
 
 Neuron enables developers to choose from multiple data-types. The
 supported data-types are FP32, FP16, BF16, and INT8. Developers can

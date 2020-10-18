@@ -1,7 +1,7 @@
 .. _tensorflow-resnet50:
 
-Getting Started with TensorFlow-Neuron (ResNet-50 Tutorial)
-===========================================================
+Getting Started with TensorFlow (ResNet50)
+==========================================
 
 Steps Overview:
 ---------------

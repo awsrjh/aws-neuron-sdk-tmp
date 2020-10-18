@@ -1,5 +1,7 @@
-Tutorial: Getting started with torch-neuron (resnet-50 tutorial)
-================================================================
+.. _pytorch-restent50:
+
+Getting Started with PyTorch (ResNet50)
+=======================================
 
 Steps Overview:
 ---------------

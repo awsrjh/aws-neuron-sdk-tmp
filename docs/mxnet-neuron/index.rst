@@ -1,3 +1,5 @@
+.. _neuron-mxnet:
+
 MXNet Neuron
 ============
 
