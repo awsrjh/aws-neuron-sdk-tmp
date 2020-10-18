@@ -2,15 +2,13 @@
 Welcome to Neuron SDK's documentation!
 ======================================
 
-This documentation provide general guidance to using Neuron SDK via examples, reference manuals, and app notes.
-
-Neuron can be used in a variety of ways, this documentation represent the different interface points for Neuron SDK users.
+AWS Neuron is an SDK for Amazon machine-learning chips, enabling high-performance deep learning applications. It includes a deep learning compiler, runtime and tools, natively integrated into TensorFlow, PyTorch and MXnet, to deliver high-performance deep learning inference applications. This documentation provides general guidance to using Neuron SDK via examples, reference manuals, and app notes.
 
 --------------------------------------------------------------------------
 
 .. toctree::
    :maxdepth: 2
-   :caption: Intorduction
+   :caption: Introduction
 
    neuron-sdk
    FAQ <FAQ>
