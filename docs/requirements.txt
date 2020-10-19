@@ -1,5 +1,4 @@
 sphinx
-sphinx.ext.napoleon
 sphinxcontrib.contentui
 nbsphinx
 
