@@ -12,8 +12,8 @@
 #
 import os
 import sys
-sys.path.insert(0, os.path.abspath(os.path.join('.','..', '..', 'src')))
-#sys.path.insert(0, os.path.abspath('.'))
+#sys.path.insert(0, os.path.abspath(os.path.join('.','..', '../src', '../src/examples')))
+sys.path.insert(0, os.path.abspath('.'))
 #sys.path.append(os.path.abspath('exts'))
 
 
@@ -33,8 +33,10 @@ release = '1.8.0'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
+extensions = ['sphinxcontrib.contentui','nbsphinx']
+
 #extensions = ['sphinx.ext.autodoc', 'sphinx.ext.napoleon','nbsphinx','recommonmark']
-extensions = ['sphinx.ext.autodoc', 'sphinx.ext.napoleon','sphinxcontrib.contentui','nbsphinx']
+#extensions = ['sphinx.ext.autodoc', 'sphinx.ext.napoleon','sphinxcontrib.contentui','nbsphinx']
 #extensions = ['sphinx.ext.autodoc', 'sphinx.ext.napoleon','nbsphinx','sphinx.ext.autosectionlabel','recommonmark']
 #extensions = ['sphinx.ext.autodoc', 'sphinx.ext.napoleon']
 #extensions = [ ]
