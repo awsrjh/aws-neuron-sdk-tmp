@@ -24,4 +24,4 @@ PyTorch Tutorials
    :maxdepth: 1
    :caption: Natural Language Processing
 
-   bert_tutorial
+   bert_tutorial/bert_tutorial

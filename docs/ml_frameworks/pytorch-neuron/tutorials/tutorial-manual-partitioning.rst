@@ -19,8 +19,7 @@ Neuron for PyTorch, and access it via your notebook.
 Step 1: Launch EC2 compilation instance
 ---------------------------------------
 
-Select an AMI of your choice. Refer to the `Neuron installation
-guide <../neuron-install-guide.md>`__ for details. For this tutorial we
+Select an AMI of your choice. Refer to the :ref:`neuron-install-guide` for details. For this tutorial we
 use an inf1.xlarge instance, you may want to experiment with a larger
 instance.
 
@@ -56,9 +55,7 @@ Now: ssh to the Inf1 instance
 Step 3: Set up the Neuron Runtime conda environment & create a tutorial directory
 ---------------------------------------------------------------------------------
 
-1) Install the neuron runtime using these instruction: `Getting started:
-   Installing and Configuring
-   Neuron-RTD <../neuron-runtime/nrt_start.md>`__.
+1) Install the neuron runtime using these instruction: :ref:`rtd-getting-started`.
 
 2) Set up your own conda environment ahead of launching
 
@@ -88,7 +85,7 @@ directory:
 
 .. code:: bash
 
-   curl -O https://raw.githubusercontent.com/aws/aws-neuron-sdk/master/src/pytorch/resnet50_partition.ipynb
+   curl -O https://raw.githubusercontent.com/aws/aws-neuron-sdk/master/docs/ml_frameworks/pytorch-neuron/tutorials/resnet50_partition.ipynb
 
 Step 5: Start Jupyter and connect in your browser:
 --------------------------------------------------

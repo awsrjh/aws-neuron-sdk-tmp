@@ -24,8 +24,7 @@ then distribute the artifacts to a fleet of Inf1 instances (the
 deployment instances) for inference execution. Neuron enables PyTorch
 for both of these steps.
 
-1.1. Select an AMI of your choice. Refer to the `Neuron installation
-guide <../neuron-install-guide.md>`__ for details.
+1.1. Select an AMI of your choice. Refer to the :ref:`neuron-install-guide` for details.
 
 1.2. Select and launch an EC2 instance
 
@@ -48,11 +47,9 @@ Step 2: Compilation instance installations
 If using Conda DLAMI version 27 and up, activate pre-installed
 PyTorch-Neuron environment (using
 ``source activate aws_neuron_pytorch_p36`` command). Please update
-PyTorch-Neuron environment by following update steps in `DLAMI release
-notes <../../release-notes/dlami-release-notes.md#conda-dlami>`__.
+PyTorch-Neuron environment by following update steps in :ref:`dlami-release-notes-conda-dlami`.
 
-To install in your own AMI, please see `Neuron Install
-Guide <../neuron-install-guide.md>`__ to setup virtual environment and
+To install in your own AMI, please see :ref:`neuron-install-guide` to setup virtual environment and
 install Torch-Neuron packages. Also, please install pillow and
 torchvision for the pretrained resnet50 model (we use no-deps for
 torchvision because we already have Neuron version of torch installed
@@ -143,9 +140,7 @@ and Neuron Runtime
    desired (see notes above on recommended Inf1 sizes for compilation)
 -  Skip neuron-cc if compilation is not done on inference instance
 
-4.2. Install the Neuron Runtime using instructions from `Getting
-started: Installing and Configuring
-Neuron-RTD <https://github.com/aws/aws-neuron-sdk/blob/master/docs/neuron-runtime/nrt_start.md>`__.
+4.2. Install the Neuron Runtime using instructions from :ref:`rtd-getting-started`
 
 Step 5: Run inference
 ---------------------

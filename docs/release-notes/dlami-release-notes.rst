@@ -168,6 +168,8 @@ Base and Conda DLAMI on Amazon Linux:
    sudo yum install aws-neuron-tools
    sudo yum install tensorflow-model-server-neuron
 
+.. _dlami-release-notes-conda-dlami:
+
 Conda DLAMI:
 ~~~~~~~~~~~~
 

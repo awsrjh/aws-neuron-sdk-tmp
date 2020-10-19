@@ -11,8 +11,9 @@ applications, it can be used for question answering, sequence prediction
 and sequence classification amongst other tasks.
 
 **Note that automatic partitioning is now released!**. Use the
-auto-partitioner on BERT as described `in this Jupyter
-notebook <tutorial_pretrained_bert.ipynb>`__. Use of the
+auto-partitioner on BERT as described 
+`in this Jupyter notebook <tutorial_pretrained_bert.ipynb>`__. 
+Use of the
 auto-partitioner is the normal way to compile BERT with PyTorch Neuron.
 It's not only easier, but also expected to be performant!
 

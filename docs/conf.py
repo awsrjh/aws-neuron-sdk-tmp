@@ -48,7 +48,9 @@ templates_path = ['_templates']
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
 #exclude_patterns = []
-exclude_patterns = ['_build', '**.ipynb_checkpoints','ml_frameworks/pytorch-neuron/tutorials/bert_tutorial/*.ipynb']
+exclude_patterns = ['_build', '**.ipynb_checkpoints',
+                    'ml_frameworks/pytorch-neuron/tutorials/*.ipynb',
+                    'ml_frameworks/pytorch-neuron/tutorials/bert_tutorial/*.ipynb']
 
 html_logo = 'images/Site-Merch_Neuron-ML-SDK_Editorial.jpg'
 
