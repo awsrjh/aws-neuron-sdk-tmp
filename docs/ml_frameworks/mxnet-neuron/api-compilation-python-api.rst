@@ -19,16 +19,14 @@ the compiled artifacts in the graph. Uncompilable operations are kept as
 original operations for framework execution.
 
 The compiled graph can be saved using the MXNet save_checkpoint and
-served using MXNet Model Serving. Please see `MXNet-Neuron Model
-Serving <./tutorial-model-serving.md>`__ for more information about
+served using MXNet Model Serving. Please see :ref:`mxnet-neuron-model-serving` for more information about
 exporting to saved model and serving using MXNet Model Serving.
 
 Options can be passed to Neuron compiler via the compile function. For
 example, the “\ ``--num-neuroncores``\ ” option directs Neuron compiler
 to compile each subgraph to fit in the specified number of NeuronCores.
 This number can be less than the total available NeuronCores on an Inf1
-instance. See `Neuron Compiler
-CLI <../neuron-cc/command-line-reference.md>`__ for more information
+instance. See :ref:`neuron-compiler-cli-reference` for more information
 about compiler options.
 
 Arguments
@@ -47,8 +45,7 @@ Arguments
       representing the maximum number of NeuronCores per subgraph.
    -  Additional compiler flags can be passed using
       ``'flags' : [<flags>]`` where is a comma separated list of
-      strings. See `Neuron GatherInfo
-      Tool <../neuron-tools/tutorial-neuron-gatherinfo.md>`__ for
+      strings. See :ref:`neuron_gatherinfo` for
       example of passing debug flags to compiler.
    -  Advanced option to exclude node names:
       ``compile_args={'excl_node_names' : [<node names>]}`` where is a

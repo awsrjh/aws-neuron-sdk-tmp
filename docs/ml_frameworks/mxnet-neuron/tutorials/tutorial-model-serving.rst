@@ -1,3 +1,5 @@
+.. _mxnet-neuron-model-serving:
+
 Tutorial: MXNet-Neuron Model Serving
 ====================================
 
@@ -7,10 +9,8 @@ classification:
 `https://github.com/awslabs/multi-model-server/tree/master/examples/mxnet_vision <https://github.com/awslabs/multi-model-server/tree/master/examples/mxnet_vision>`__.
 
 Before starting this example, please ensure that Neuron-optimized MXNet
-version mxnet-neuron is installed along with Neuron Compiler (see `MXNet
-Tutorial <./tutorial-compile-infer.md>`__) and Neuron RTD is running
-with default settings (see `Neuron Runtime getting
-started <./../neuron-runtime/nrt_start.md>`__ ).
+version mxnet-neuron is installed along with Neuron Compiler (see :ref:`mxnet-resnet50`) and Neuron RTD is running
+with default settings (see :ref:`rtd-getting-started`. ).
 
 If using DLAMI, you can activate the environment aws_neuron_mxnet_p36
 and skip the installation part in the first step below.
@@ -118,8 +118,7 @@ MXNet-Neuron:
 
 7. Start MXNet Model Server (MMS) and load model using RESTful API.
    Please ensure that Neuron RTD is running with default settings (see
-   `Neuron Runtime getting
-   started <./../neuron-runtime/nrt_start.md>`__):
+   :ref:`rtd-getting-started`):
 
 .. code:: bash
 

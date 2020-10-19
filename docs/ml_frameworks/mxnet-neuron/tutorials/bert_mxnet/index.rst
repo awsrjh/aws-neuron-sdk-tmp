@@ -48,8 +48,7 @@ Step 1: Launch EC2 instance
 ---------------------------
 
 For this task we’ll use a inf1.2xlarge instance. Ensure it has the
-latest DLAMI. Refer to the `Neuron installation
-guide <../../../docs/neuron-install-guide.md>`__ for details.
+latest DLAMI. Refer to the :ref:`neuron-install-guide` for details.
 
 Step 2: Connecting to your instance
 -----------------------------------
@@ -82,11 +81,9 @@ Step 3: Set up the Neuron Runtime environment & create a tutorial directory
 If using Conda DLAMI version 27 and up, activate pre-installed
 PyTorch-Neuron environment (using
 ``source activate aws_neuron_pytorch_p36`` command). Please update
-PyTorch-Neuron environment by following update steps in `DLAMI release
-notes <../../release-notes/dlami-release-notes.md#conda-dlami>`__.
+PyTorch-Neuron environment by following update steps in :ref:`dlami-release-notes-conda-dlami`.
 
-To install in your own AMI, please see `Neuron Install
-Guide <../neuron-install-guide.md>`__ to setup virtual environment and
+To install in your own AMI, please see :ref:`neuron-install-guide` to setup virtual environment and
 install Torch-Neuron (torch-neuron) and Neuron Compiler (neuron-cc)
 packages. Also, please install pillow and torchvision for the pretrained
 resnet50 model (we use no-deps for torchvision because we already have
@@ -185,8 +182,8 @@ conda environment is visible as “kernel” with the “conda\_” prefix
 
 .. _step-6-start-the-notebook--select-the-correct-kernel:
 
-Step 6: Start the notebook & select the correct kernel
-------------------------------------------------------
+Step 6: Start the notebook and select the correct kernel
+--------------------------------------------------------
 
 -  In notebook browser select “bert_mxnet.ipynb”
 -  This will pop up a new tab. In that tab use the menus:

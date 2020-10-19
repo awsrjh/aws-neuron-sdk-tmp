@@ -23,8 +23,7 @@ models on a compilation server and then distribute the artifacts to a
 fleet of Inf1 instances for execution. Neuron enables MXNet to be used
 for all of these steps.
 
-1.1. Select an AMI of your choice. Refer to the `Neuron installation
-guide <../neuron-install-guide.md>`__ for details.
+1.1. Select an AMI of your choice. Refer to the :ref:`neuron-install-guide` for details.
 
 1.2. Select and launch an EC2 instance of your choice to compile. Launch
 an instance by following `EC2
@@ -44,11 +43,9 @@ Step 2: Install MXNet-Neuron and Neuron Compiler On Compilation Instance
 
 If using Conda DLAMI version 26 and up, activate pre-installed
 MXNet-Neuron environment (using ``source activate aws_neuron_mxnet_p36``
-command). Please update Neuron by following update steps in `DLAMI
-release notes <../../release-notes/dlami-release-notes.md>`__.
+command). Please update Neuron by following update steps in :ref:`dlami-neuron-rn`.
 
-To install in your own AMI, please see `Neuron Install
-Guide <../neuron-install-guide.md>`__ to setup virtual environment and
+To install in your own AMI, please see :ref:`neuron-install-guide` to setup virtual environment and
 install MXNet-Neuron (mxnet-neuron) and Neuron Compiler (neuron-cc)
 packages.
 
@@ -105,8 +102,7 @@ TensorFlow-Neuron and Neuron Runtime.
    (see notes above on recommended Inf1 sizes for compilation)
 -  Skip neuron-cc if compilation is not done on inference instance
 
-4.2. To install Neuron Runtime, see `Getting started: Installing and
-Configuring Neuron-RTD <./../neuron-runtime/nrt_start.md>`__.
+4.2. To install Neuron Runtime, see :ref:`rtd-getting-started`.
 
 Step 5: Execute inference on Inf1
 ---------------------------------

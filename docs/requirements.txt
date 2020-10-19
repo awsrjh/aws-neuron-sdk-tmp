@@ -1,5 +1,4 @@
 sphinx
 sphinxcontrib.contentui
-ipykernel
 nbsphinx
 
