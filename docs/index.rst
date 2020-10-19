@@ -50,5 +50,6 @@ AWS Neuron is an SDK for Amazon machine-learning chips, enabling high-performanc
    :caption: Neuron Containers
    
    neuron-container-tools/index
-
+   neuron-container-tools/tutorials
+   neuron-container-tools/rn
 

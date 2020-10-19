@@ -80,6 +80,8 @@ RPM (AmazonLinux, Centos)
    sudo yum install aws-neuron-runtime
    sudo yum install aws-neuron-tools
 
+.. _config-nr-hugepages:
+
 Step 3: Configure nr_hugepages
 ------------------------------
 
@@ -142,6 +144,8 @@ present Neuron devices in the instance. With the default configuration:
 2. A single runtime daemon(multi threaded) handles all the inference
    requests.
 
+.. _multiple-neuron-rtd:
+
 Multiple Neuron-RTD
 ~~~~~~~~~~~~~~~~~~~
 
@@ -179,6 +183,8 @@ the system.
 
 neuron-rtd can manage one or more devices. Select contigous Inferentia
 devices to be managed by a single neuron-rtd.
+
+.. _create-conf-file-for-each-instance:
 
 Create a configuration file for each instance
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

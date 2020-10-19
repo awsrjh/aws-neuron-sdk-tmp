@@ -9,40 +9,15 @@ provide an explanation of what happened and what can potentially correct
 the issue.
 
 If you haven't read it already, please familiarize yourself with our
-`getting started <./nrt_start.md>`__ documentation and usage examples.
+:ref:`rtd-getting-started`  documentation and usage examples.
 If your issue is still not resolved or you have a more nuanced problem,
 contact us via `issues <https://github.com/aws/aws-neuron-sdk/issues>`__
 posted to this repo, the `AWS Neuron developer
 forum <https://forums.aws.amazon.com/forum.jspa?forumID=355>`__, or
 through AWS support.
 
---------------
-
-Topics
-~~~~~~
-
-**What is going wrong?**
-
-`Runtime installation failed <#installation-failed>`__
-
-`Neuron Runtime services fail to
-start <#neuron-services-fail-to-start>`__
-
-`Load model failure <#load-model-failure>`__
-
-`Inferences are failing <#inferences-are-failing>`__
-
-.. raw:: html
-
-   <br/>
-
-**Additional helpers:**
-
-`Getting Started Guide <./nrt_start.md>`__
-
-`Error Codes <./nrt-return-codes.md>`__
-
---------------
+What is going wrong?
+####################
 
 Runtime installation failed
 ---------------------------
@@ -153,29 +128,16 @@ start <#neuron-services-fail-to-start>`__ for more help. The components
 are likely installed at this point, but you're experiencing a problem
 related to the startup, which is attempted during install.
 
---------------
 
 Neuron Runtime services fail to start
 -------------------------------------
 
-There are two different runtime services, neuron-rtd and
-neuron-discovery, that are needed for correct functionality of an Inf1
-instance. If neuron-discovery is failing, you might have a system
-configuration issue. Try running on a different instance and if the
-problem persists contact us via
-`issues <https://github.com/aws/aws-neuron-sdk/issues>`__, the `AWS
-Neuron developer
-forum <https://forums.aws.amazon.com/forum.jspa?forumID=355>`__, or
-through AWS support.
+There are two different runtime services, neuron-rtd and neuron-discovery, that are needed for correct functionality of an Inf1 instance. If neuron-discovery is failing, you might have a system configuration issue. Try running on a different instance and if the problem persists contact us via `issues <https://github.com/aws/aws-neuron-sdk/issues>`__, the `AWS Neuron developer forum <https://forums.aws.amazon.com/forum.jspa?forumID=355>`__, or through AWS support.
 
-If the neuron-rtd service is failing to start, you may be experiencing
-failure due to (1) a conflict with another instance of neuron-rtd, (2)
-insufficient number of hugepages allocated by the OS, or (3) a lack of
-system privileges needed to start the service. Read on for more details
-on each scenario.
+If the neuron-rtd service is failing to start, you may be experiencing failure due to (1) a conflict with another instance of neuron-rtd, (2) insufficient number of hugepages allocated by the OS, or (3) a lack of system privileges needed to start the service. Read on for more details on each scenario.
 
 Another Instance of Runtime is Running
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 What Went Wrong?
 ''''''''''''''''
@@ -184,7 +146,7 @@ A new instance of neuron-rtd cannot start if another neuron-rtd is
 already running and bound to the same Neuron devices. Please read on for
 how to detect this scenario, but if you're having trouble configuring
 two or more runtimes on the same Inf1 instance, see detailed config
-instructions `here <./nrt_start.md#multiple-neuron-rtd>`__.
+instructions :ref:`multiple-neuron-rtd`.
 
 How To Find Out?
 ''''''''''''''''
@@ -206,7 +168,7 @@ the new instance.
    sudo systemctl stop neuron-rtd
 
 Insufficient amount of hugepages available for the Runtime
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _what-went-wrong-1:
 
@@ -243,20 +205,19 @@ How To Fix?
 
 Detailed information on how to configure the number of hugepages on an
 instance is documented
-`here <./nrt_start.md#step-3-configure-nr_hugepages>`__. If you're
+:ref:`config-nr-hugepages`. If you're
 hitting this issue due to your AMI being built on an instance that has
 less Inferntias than the target it's lauched on, there's two ways to fix
 the issue. Either update the configuration of the AMI to be specific to
 the Inf1 instance type, or create a script to set the number of
 hugepages at boot. The scripted approach is currently part of the DLAMI
 if you need an example to follow. Please see further instruction on how
-to configure the number of hugepages
-`here <./nrt_start.md#step-3-configure-nr_hugepages>`__.
+to configure the number of hugepages :ref:`config-nr-hugepages`.
 
 TODO: provide a script.
 
 Incorrect User privileges
-~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Trying to start Runtime without being root/sudo results in an
 authentication password request.
@@ -299,7 +260,7 @@ reach out to the Neuron team by posting the relevant details on GitHub
 `issues <https://github.com/aws/aws-neuron-sdk/issues>`__.
 
 Neff couldn't be extracted
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _what-went-wrong-3:
 
@@ -328,7 +289,7 @@ Increase /tmp space by removing unused files or taking other measures to
 increase the available disk size under /tmp.
 
 Unsupported NEFF Version
-~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _what-went-wrong-4:
 
@@ -362,11 +323,11 @@ How To Fix?
 Use compatible versions of Neuron Compiler and Runtime. Updating to the
 latest version of both Neuron Compiler and Neuron Runtime is the
 simplest solution. If updating one of the two is not an option, please
-refer to the `release notes <../../release-notes/neuron-runtime.md>`__
+refer to the `release notes </release-notes/neuron-runtime>`__
 of the Neuron Runtime to determine NEFF version support.
 
 Invalid NEFF
-~~~~~~~~~~~~
+^^^^^^^^^^^^
 
 .. _what-went-wrong-5:
 
@@ -403,7 +364,7 @@ not work, report issue to Neuron by posting the relevant details on
 GitHub `issues <https://github.com/aws/aws-neuron-sdk/issues>`__.
 
 Bad Memory Access by NEFF
-~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _what-went-wrong-6:
 
@@ -436,7 +397,7 @@ Report issue to Neuron by posting the relevant details on GitHub
 `issues <https://github.com/aws/aws-neuron-sdk/issues>`__.
 
 Insufficient resources
-~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^
 
 .. _what-went-wrong-7:
 
@@ -477,7 +438,7 @@ still stuck, moving to a larger Inf1 instance size may provide the
 additional resources needed.
 
 Insufficient number of NeuronCores available to load a NEFF
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _what-went-wrong-8:
 
@@ -516,7 +477,7 @@ Inferences are failing
 ----------------------
 
 Wrong Model Id
-~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^
 
 .. _what-went-wrong-9:
 
@@ -546,7 +507,7 @@ Ensure your application is only inferring against models that are
 running on the Inferentia.
 
 Bad or incorrect inputs
-~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^
 
 NEFF contains information of the number of input feature maps required
 by the model. If inputs to the model don't match the expected
@@ -580,7 +541,7 @@ How To Fix?
 Ensure the correct number of inputs and correct sizes are used.
 
 Numerical errors on the Model
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. _what-went-wrong-11:
 
@@ -610,7 +571,7 @@ Report issue to Neuron by posting the relevant details on GitHub
 `issues <https://github.com/aws/aws-neuron-sdk/issues>`__.
 
 Inference Timeout
-~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^
 
 .. _what-went-wrong-12:
 
@@ -643,4 +604,10 @@ How To Fix?
 Report issue to Neuron by posting the relevant details on GitHub
 `issues <https://github.com/aws/aws-neuron-sdk/issues>`__.
 
---------------
+Additional helpers
+##################
+
+`Getting Started Guide <./nrt_start.md>`__
+
+`Error Codes <./nrt-return-codes.md>`__
+

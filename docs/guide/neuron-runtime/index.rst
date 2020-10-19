@@ -8,9 +8,9 @@ Neuron Runtime
 
    overview
    Getting started <nrt_start>
+   Theory of Operation <nrt-theory-of-operation>
    Configurable Parameters <nrt-configurable-parameters>
    Return codes <nrt-return-codes>
-   Theory of Operation <nrt-theory-of-operation>
    Troubleshooting <nrt-troubleshoot>
    faq
    rn
