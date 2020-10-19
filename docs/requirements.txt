@@ -1,4 +1,6 @@
 sphinx
 sphinxcontrib.contentui
+ipykernel
 nbsphinx
+sphinx.ext.mathjax
 

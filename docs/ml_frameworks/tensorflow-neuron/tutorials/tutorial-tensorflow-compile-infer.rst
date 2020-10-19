@@ -22,8 +22,7 @@ models on a compilation instance and then distribute the artifacts to a
 fleet of deployment instances, for execution. Neuron enables TensorFlow
 to be used for all of these steps.
 
-1.1. Select an AMI of your choice. Refer to the `Neuron installation
-guide <../neuron-install-guide.md>`__ for details.
+1.1. Select an AMI of your choice. Refer to the :ref:`neuron-install-guide` for details.
 
 1.2. Select and launch an EC2 instance of your choice to compile. Launch
 an instance by following `EC2 instance launch
@@ -43,11 +42,9 @@ Step 2: Compilation Instance Installations
 If using Conda DLAMI version 26 and up, activate pre-installed
 TensorFlow-Neuron environment (using
 ``source activate aws_neuron_tensorflow_p36`` command). Please update
-Neuron by following update steps in `DLAMI release
-notes <../../release-notes/dlami-release-notes.md>`__.
+Neuron by following update steps in :ref:`dlami-neuron-rn`.
 
-To install in your own AMI, please see `Neuron Install
-Guide <../neuron-install-guide.md>`__ to setup virtual environment and
+To install in your own AMI, please see :ref:`neuron-install-guide` to setup virtual environment and
 install TensorFlow-Neuron (tensorflow-neuron) and Neuron Compiler
 (neuron-cc) packages.
 
@@ -144,8 +141,7 @@ TensorFlow-Neuron and Neuron Runtime
    (see notes above on recommended Inf1 sizes for compilation)
 -  Skip neuron-cc if compilation is not done on inference instance
 
-4.2. To install Neuron Runtime, see `Getting started: Installing and
-Configuring Neuron-RTD <./../neuron-runtime/nrt_start.md>`__.
+4.2. To install Neuron Runtime, see :ref:`rtd-getting-started`.
 
 Step 5: Deploy
 --------------

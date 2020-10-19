@@ -16,11 +16,11 @@ TensorFlow Tutorials
    :caption: Computer Vision
    
    tutorial-tensorflow-compile-infer
-   yolo_v4_demo
-   yolo_v3_demo
-   ssd300_demo
-   openpose_demo
-   keras_resnet50
+   yolo_v4_demo/yolo_v4_demo
+   yolo_v3_demo/yolo_v3_demo
+   ssd300_demo/ssd300_demo
+   openpose_demo/openpose_demo
+   keras_resnet50/keras_resnet50
 
 .. _tensorflow-nlp:
 
@@ -28,7 +28,7 @@ TensorFlow Tutorials
    :maxdepth: 1
    :caption: Natural Language Processing
 
-   bert_demo
+   bert_demo/bert_demo
 
 .. _tensorflow-utilize-neuron:
 
