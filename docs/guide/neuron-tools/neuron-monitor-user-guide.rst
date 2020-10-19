@@ -11,8 +11,7 @@ running on the system and streams the collected data to ``stdout`` in
 ``JSON`` format.
 
 These metrics and stats are organized into **metric groups** which can
-be configured by providing a configuration file as described in `Using
-neuron-monitor <#using-neuron-monitor>`__.
+be configured by providing a configuration file as described in :ref:`using-neuron-monitor`
 
 When running, **neuron-monitor** will:
 
@@ -21,11 +20,12 @@ When running, **neuron-monitor** will:
 -  Take the newly collected data and consolidate it into a large report
 -  Serialize that report to JSON and stream it to stdout from where it
    can be consumed by other tools - an example of such a tool is
-   provided in the form of the `neuron-monitor Cloudwatch
-   example <#companion-scripts>`__ and is installed in
+   provided in the form of the :ref:`neuron-monitor-companion-scripts`  and is installed in
    ``/opt/aws/neuron/bin/neuron-monitor-cloudwatch.py``
 -  Wait until at least one **metric group** needs to be collected and
    repeat this flow
+
+.. _using-neuron-monitor:
 
 Using neuron-monitor
 --------------------
@@ -120,20 +120,24 @@ JSON objects and fields in the settings file
 Runtime-level metric groups
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--  `"nc_counters" <#nc_counters>`__ - NeuronCore related metrics
--  `"memory_used" <#memory_used>`__ - data on the amount of memory used
+
+
+-  :ref:`neuron-monitor-nc-counters` - NeuronCore related metrics
+-  :ref:`neuron-monitor-memory-used` - data on the amount of memory used
    by the Neuron runtime
--  `"runtime_cpu_usage" <#runtime_cpu_usage>`__ - Neuron runtime vCPU
+-  :ref:`neuron-monitor-cpu-usage` - Neuron runtime vCPU
    utilization data
--  `"inference_stats" <#inference_stats>`__ - runtime-wide inference
+-  :ref:`neuron-monitor-inference-stats` - runtime-wide inference
    stats, including error count and latency
--  `"hw_counters" <#hw_counters>`__ - counters for correctable and
+-  :ref:`neuron-monitor-hw-counters` - counters for correctable and
    uncorrectable memory ecc events
 
 System-wide metric groups
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
--  `"cpu_usage" <#cpu_usage>`__ - system-wide vCPU usage
+-  :ref:`neuron-monitor-cpu-usage` - system-wide vCPU usage
+
+ 
 
 Execution model
 ---------------
@@ -229,8 +233,10 @@ in the resulting output. The general format for such an entry is:
 Runtime level metric groups
 ---------------------------
 
-"nc_counters"
-~~~~~~~~~~~~~
+.. _neuron-monitor-nc-counters:
+
+nc_counters
+~~~~~~~~~~~
 
 ::
 
@@ -278,8 +284,10 @@ Runtime level metric groups
 -  ``"error"`` - string containing any error that occurred when
    collecting the data
 
-"inference_stats"
-~~~~~~~~~~~~~~~~~
+.. _neuron-monitor-inference-stats:
+
+inference_stats
+~~~~~~~~~~~~~~~
 
 ::
 
@@ -361,8 +369,10 @@ Runtime level metric groups
 -  ``"error"`` - string containing any error that occurred when
    collecting the data
 
-"memory_used"
-~~~~~~~~~~~~~
+.. _neuron-monitor-memory-used:
+
+memory_used
+~~~~~~~~~~~
 
 ::
 
@@ -476,8 +486,10 @@ Runtime level metric groups
 -  ``"error"`` - string containing any error that occurred when
    collecting the data
 
-"hw_counters"
-~~~~~~~~~~~~~
+.. _neuron-monitor-hw-counters:
+
+hw_counters
+~~~~~~~~~~~
 
 ::
 
@@ -535,8 +547,10 @@ Runtime level metric groups
 System level metric groups
 --------------------------
 
-"cpu_usage"
-~~~~~~~~~~~
+.. _neuron-monitor-cpu-usage:
+
+cpu_usage
+~~~~~~~~~
 
 ::
 
@@ -613,6 +627,8 @@ System level metric groups
    switches during the captured period
 -  ``"error"`` - string containing any error that occurred when
    collecting the data
+
+.. _neuron-monitor-companion-scripts:
 
 Companion scripts
 -----------------

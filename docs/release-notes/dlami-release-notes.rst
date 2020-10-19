@@ -1,3 +1,5 @@
+.. _dlami-neuron-rn:
+
 DLAMI with Neuron Release Notes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

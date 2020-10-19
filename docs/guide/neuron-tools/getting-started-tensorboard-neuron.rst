@@ -17,11 +17,10 @@ Installation
 Note: on DLAMI v26.0, please do
 ``conda install numpy=1.17.2 --yes --quiet`` before following the Conda
 installation instructions, as the installed numpy version prevents the
-update. See `DLAMI Release
-Notes <../../release-notes/dlami-release-notes.md>`__ for more info.
+update. See :ref:`dlami-neuron-rn` for more info.
 
 This section assumes the Neuron repos have been configured as shown
-here: `Neuron installation guide <../neuron-install-guide.md>`__
+here: :ref:`neuron-install-guide`
 
 By default, TensorBoard-Neuron will be installed when you install
 TensorFlow-Neuron.
@@ -299,9 +298,7 @@ How to: Debug an inference
 --------------------------
 
 To make use of the Debugger plugin, you must specify your desired output
-tensors before creating the saved model. See `Step 1: Get a TensorFlow
-SavedModel that runs on Inferentia: Getting Started:
-TensorFlow-Neuron <../tensorflow-neuron/tutorial-tensorflow-serving.md>`__
+tensors before creating the saved model. See :ref:`tensorflow-serving`
 for how to create the saved model. Essentially, adding these tensors to
 the “outputs” dictionary will allow you to view them in the debugger
 later on.

@@ -32,8 +32,8 @@ AWS Neuron is an SDK for Amazon machine-learning chips, enabling high-performanc
    :caption: Neuron Guide
 
    Neuron Fundamentals <guide/technotes/index>
-   Neuron Runtime <guide/neuron-runtime/index>
    Neuron Compiler <guide/neuron-cc/index>
+   Neuron Runtime <guide/neuron-runtime/index>
    Neuron Tools <guide/neuron-tools/index>
 
 

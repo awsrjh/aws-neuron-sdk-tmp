@@ -1,7 +1,7 @@
 .. _neuron-install-guide:
 
-Configuring Linux for repository updates
-========================================
+Neuron Install Guide - Configuring Linux for repository updates
+===============================================================
 
 Neuron is using standard package managers (apt, yum, pip, and conda) to install and keep updates current. Please refer to the applicable Linux section for detailed configuration steps.
 
