@@ -1,3 +1,5 @@
+.. _tensorflow-keras-resnet50:
+
 ResNet-50 optimization example
 ==============================
 

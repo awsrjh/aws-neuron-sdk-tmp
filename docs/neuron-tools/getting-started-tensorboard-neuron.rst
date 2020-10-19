@@ -128,6 +128,8 @@ Now, in a browser visit `localhost:6006 <http://localhost:6006/>`__ to
 view the visualization or and enter the host and port if specified
 above.
 
+.. _tensorboard-howto-check-compatibility:
+
 How to: Check Neuron compatibility
 ----------------------------------
 
