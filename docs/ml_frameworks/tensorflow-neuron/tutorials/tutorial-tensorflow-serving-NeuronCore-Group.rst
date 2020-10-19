@@ -15,8 +15,7 @@ package.
 Install TensorFlow Model Server and Serving API
 -----------------------------------------------
 
-Follow the steps in the `Neuron installation
-guide <../neuron-install-guide.md>`__.
+Follow the steps in the :ref:`neuron-install-guide`.
 
 Then ensure you install using either apt-get or yum:
 

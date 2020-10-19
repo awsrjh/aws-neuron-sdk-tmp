@@ -9,12 +9,8 @@ tutorial, please use an ``inf1.6xlarge`` instance, which has 16
 NeuronCores.
 
 First step is to setup ``c5.4xlarge`` for compilation as described in
-steps 1 and 2 of `TensorFlow
-tutorial <https://github.com/aws/aws-neuron-sdk/blob/master/docs/tensorflow-neuron/tutorial-compile-infer.md#tutorial-getting-started-with-tensorflow-neuron-resnet-50-tutorial>`__.
-Repeat the setup steps for ``inf1.6xlarge`` instance. In addition,
-install Neuron Runtime on Inf1 following the steps here: `Getting
-started: Installing and Configuring
-Neuron-RTD <https://github.com/aws/aws-neuron-sdk/blob/master/docs/neuron-runtime/nrt_start.md>`__.
+steps 1 and 2 of :ref:`tensorflow-resnet50`.  Repeat the setup steps for ``inf1.6xlarge`` instance. In addition,
+install Neuron Runtime on Inf1 following the steps here: :ref:`rtd-getting-started`
 Also, download the example source on both ``c5.4xlarge`` and
 ``inf1.6xlarge``:
 

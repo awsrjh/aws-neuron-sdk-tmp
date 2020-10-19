@@ -1,7 +1,7 @@
 .. _tensorflow-yolo4:
 
 Working with YOLO v4 using AWS Neuron SDK
------------------------------------------
+=========================================
 
 The :doc:`evaluate` notebook contains an example on how to take an open source YOLO v4 models, and run it on AWS Inferentia.
 

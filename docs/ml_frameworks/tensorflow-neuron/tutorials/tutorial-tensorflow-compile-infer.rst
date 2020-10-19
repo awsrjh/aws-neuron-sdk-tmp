@@ -48,6 +48,8 @@ To install in your own AMI, please see :ref:`neuron-install-guide` to setup virt
 install TensorFlow-Neuron (tensorflow-neuron) and Neuron Compiler
 (neuron-cc) packages.
 
+.. _tensorflow-resnet50-compile-on-compilation-instance:
+
 Step 3: Compile on Compilation Instance
 ---------------------------------------
 

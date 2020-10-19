@@ -24,7 +24,7 @@ MXNet Tutorials
    :maxdepth: 1
    :caption: Natural Language Processing
 
-   bert_mxnet
+   bert_mxnet/index
 
 .. _mxnet-utilize-neuron:
 

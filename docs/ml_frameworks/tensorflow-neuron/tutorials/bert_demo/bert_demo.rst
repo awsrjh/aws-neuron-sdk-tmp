@@ -7,24 +7,7 @@ This example shows a Neuron compatible BERT-Large implementation that is
 functionally equivalent to open source BERT-Large model. This demo uses
 TensorFlow-Neuron, BERT-Large weights fine tuned for MRPC and also shows
 the performance achieved by the Inf1 instance. For users who want to use
-public BERT SavedModels please also follow the steps described
-`below <#publicbert>`__.
-
-Table of Contents
------------------
-
-1. Launch EC2 instances
-2. Compiling Neuron compatible BERT-Large
-
-   -  Update compilation EC2 instance
-   -  Compile open source BERT-Large saved model using Neuron compatible
-      BERT-Large implementation
-
-3. Running the inference demo
-
-   -  Update inference EC2 instance
-   -  Launching the BERT-Large demo server
-   -  Sending requests to server from multiple clients
+public BERT SavedModels please also follow the steps described :ref:`using-public-bert-savedmodels`.
 
 Launch EC2 instances
 --------------------
@@ -66,7 +49,7 @@ Neuron software works with tensorflow saved models. Users should bring
 their own BERT-Large saved model for this section. This demo will run
 inference for the MRPC task and the saved model should be fine tuned for
 MRPC. Users who need additional help to fine-tune the model for MRPC or
-to create a saved model can refer to `Appendix 1 <#appendix1>`__.
+to create a saved model can refer to :ref:`bert-tensorflow-demo-appendix1`.
 
 In the same conda environment and directory bert_demo scripts, run the
 following :
@@ -83,7 +66,7 @@ inferencing.
 
 The bert_model.py script encapsulates all the steps necessary for this
 process. For details on what is done by bert_model.py please refer to
-`Appendix 2 <#appendix2>`__.
+:ref:`bert-tensorflow-demo-appendix2`.
 
 Running the inference demo
 --------------------------
@@ -144,6 +127,8 @@ This spins up 96 clients, each of which sends 128 inference requests.
 The expected performance is about 360 inferences/second for a single
 instance of inf1.xlarge.
 
+.. _using-public-bert-savedmodels:
+
 Using public BERT SavedModels
 -----------------------------
 
@@ -167,6 +152,8 @@ Example usage is shown below:
 
    export BERT_LARGE_SAVED_MODEL="/path/to/user/bert-large/savedmodel"
    python bert_no_model.py --input_saved_model $BERT_LARGE_SAVED_MODEL --output_saved_model ./bert-saved-model-neuron --batch_size=1
+
+.. _bert-tensorflow-demo-appendix1:
 
 Appendix 1
 ----------
@@ -234,6 +221,8 @@ $BERT_REPO_DIR/bert-saved-model/*random_number*/. Where, *random_number*
 is a random number generated for every run. Use this saved model to
 continue with the rest of the demo.
 
+.. _bert-tensorflow-demo-appendix2:
+
 Appendix 2
 ----------
 
@@ -241,8 +230,7 @@ For all BERT variants, we currently need to augment the standard Neuron
 compilation process for performance tuning. In the future, we intend to
 automate this tuning process. This would allow users to use the standard
 Neuron compilation process, which requires only a one line change in
-user source code. The standard compilation process is described
-`here <https://github.com/aws/aws-neuron-sdk/blob/master/docs/tensorflow-neuron/tutorial-compile-infer.md#step-3-compile-on-compilation-instance>`__.
+user source code. The standard compilation process is described :ref:`tensorflow-resnet50-compile-on-compilation-instance`.
 
 The augmented Neuron compilation process is encapsulated by the
 bert_model.py script, which performs the following things :
@@ -250,8 +238,7 @@ bert_model.py script, which performs the following things :
 1. Define a Neuron compatible implementation of BERT-Large. For
    inference, this is functionally equivalent to the open source
    BERT-Large. The changes needed to create a Neuron compatible
-   BERT-Large implementation is described in `Appendix
-   3 <#appendix3>`__.
+   BERT-Large implementation is described in :ref:`bert-tensorflow-demo-appendix3`.
 2. Extract BERT-Large weights from the open source saved model pointed
    to by --input_saved_model and associates it with the Neuron
    compatible model
@@ -259,6 +246,8 @@ bert_model.py script, which performs the following things :
    Inferentia using the newly associated weights
 4. Finally, the compiled model is saved into the location given by
    --output_saved_model
+
+.. _bert-tensorflow-demo-appendix3:
 
 Appendix 3
 ----------
