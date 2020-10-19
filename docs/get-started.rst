@@ -17,7 +17,7 @@ If you are a first-time-user of Neuron, the following steps are recommended for 
    * :ref:`mxnet-resnet50`
 
 
-#. Get familiar with Neuron fundamentals and tools (If you are not):
+#. Get familiar with Neuron fundamentals and tools:
 
    * Learn :ref:`neuron-fundamentals` : such as :ref:`neuron-data-types`, :ref:`neuron-batching` and :ref:`neuroncore-pipeline`, learning Neuron fundenetals will help you utilize Neuron to develop a highly optimized ML application.
 

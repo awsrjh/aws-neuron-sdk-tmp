@@ -1,3 +1,5 @@
+.. _install-neuron:
+
 Installing Neuron
 ~~~~~~~~~~~~~~~~~
 
@@ -5,6 +7,6 @@ Installing Neuron
    :maxdepth: 1
 
    install_overview
+   neuron-install-guide
    dlami
    dlcontainers
-   neuron-install-guide

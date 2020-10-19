@@ -1,0 +1,4 @@
+sphinx.ext.autodoc
+sphinx.ext.napoleon
+sphinxcontrib.contentui
+nbsphinx

@@ -1,9 +1,9 @@
-User Guide: Configuring Linux for repository updates
-====================================================
+.. _neuron-install-guide:
 
-Neuron is using standard package managers (apt, yum, pip, and conda) to
-install and keep updates current. Please refer to the applicable Linux
-section for detailed configuration steps.
+Configuring Linux for repository updates
+========================================
+
+Neuron is using standard package managers (apt, yum, pip, and conda) to install and keep updates current. Please refer to the applicable Linux section for detailed configuration steps.
 
 Neuron supports Python versions 3.5, 3.6, and 3.7.
 
@@ -23,14 +23,14 @@ Ubuntu 16
    sudo apt-get install aws-neuron-runtime
    sudo apt-get install aws-neuron-tools
 
-NOTE: If you see the following errors during apt-get install, please
-wait a minute or so for background updates to finish and retry apt-get
-install:
+.. note::
 
-.. code:: bash
+  If you see the following errors during apt-get install, please wait a minute or so for background updates to finish and retry apt-get install:
 
-   E: Could not get lock /var/lib/dpkg/lock-frontend - open (11: Resource temporarily unavailable)
-   E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), is another process using it?
+  .. code:: bash
+
+     E: Could not get lock /var/lib/dpkg/lock-frontend - open (11: Resource temporarily unavailable)
+     E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), is another process using it?
 
 Ubuntu 18
 ---------
@@ -48,14 +48,14 @@ Ubuntu 18
    sudo apt-get install aws-neuron-runtime
    sudo apt-get install aws-neuron-tools
 
-NOTE: If you see the following errors during apt-get install, please
-wait a minute or so for background updates to finish and retry apt-get
-install:
+.. note::
 
-.. code:: bash
+   If you see the following errors during apt-get install, please wait a minute or so for background updates to finish and retry apt-get install:
 
-   E: Could not get lock /var/lib/dpkg/lock-frontend - open (11: Resource temporarily unavailable)
-   E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), is another process using it?
+   .. code:: bash
+
+      E: Could not get lock /var/lib/dpkg/lock-frontend - open (11: Resource temporarily unavailable)
+      E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), is another process using it?
 
 Amazon Linux, Centos, RHEL
 --------------------------
@@ -78,9 +78,7 @@ Amazon Linux, Centos, RHEL
 Neuron Pip Packages
 -------------------
 
-It is recommended to use a virtual environment when installing Neuron
-pip packages. The following steps show how to setup the virtual
-environment on Ubuntu or Amazon Linux:
+It is recommended to use a virtual environment when installing Neuron pip packages. The following steps show how to setup the virtual environment on Ubuntu or Amazon Linux:
 
 .. code:: bash
 
@@ -111,30 +109,23 @@ Modify Pip repository configurations to point to the Neuron repository:
    extra-index-url = https://pip.repos.neuron.amazonaws.com
    EOF
 
-.. raw:: html
 
-   <details><summary><b>Optional:</b> To verify the packages before install (using neuron-cc as an example)
-   </summary>
-   <p>
+.. note::
 
-.. code:: bash
+  .. toggle-header::
+      :header: **Optional**: To verify the packages before install (using neuron-cc as an example) **click** 
 
-   curl https://pip.repos.neuron.amazonaws.com/GPG-PUB-KEY-AMAZON-AWS-NEURON.PUB | gpg --import
-   pip download --no-deps neuron-cc
-   # The above shows you the name of the package downloaded
-   # Use it in the following command
-   wget https://pip.repos.neuron.amazonaws.com/neuron-cc/neuron_cc-<VERSION FROM FILE>.whl.asc
-   gpg --verify neuron_cc-<VERSION FROM FILE>.whl.asc neuron_cc-<VERSION FROM FILE>.whl
+        .. code:: bash
 
-.. raw:: html
+          curl https://pip.repos.neuron.amazonaws.com/GPG-PUB-KEY-AMAZON-AWS-NEURON.PUB | gpg --import
+          pip download --no-deps neuron-cc
+          # The above shows you the name of the package downloaded
+          # Use it in the following command
+          wget https://pip.repos.neuron.amazonaws.com/neuron-cc/neuron_cc-<VERSION FROM FILE>.whl.asc
+          gpg --verify neuron_cc-<VERSION FROM FILE>.whl.asc neuron_cc-<VERSION FROM FILE>.whl
 
-   </p>
-   </details>
 
-The following Pip installation commands assume you are using a virtual
-Python environment (see above for instructions on how to setup a virtual
-Python environment). If not using virtual Python environment, please
-switch 'pip' with 'pip3' as appropriate for your Python environment.
+The following Pip installation commands assume you are using a virtual Python environment (see above for instructions on how to setup a virtual Python environment). If not using virtual Python environment, please switch 'pip' with 'pip3' as appropriate for your Python environment.
 
 TensorFlow
 ~~~~~~~~~~
@@ -185,7 +176,8 @@ PyTorch
 
 .. code:: bash
 
-   # NOTE: please make sure [tensorflow] option is provided during installation of neuron-cc for PyTorch-Neuron compilation; this is not necessary for PyTorch-Neuron inference.
+
+   #NOTE please make sure [tensorflow] option is provided during installation of neuron-cc for PyTorch-Neuron compilation; this is not necessary for PyTorch-Neuron inference.
    pip install neuron-cc[tensorflow]
    pip install torch-neuron
 
@@ -223,51 +215,31 @@ steps are example steps to install and activate Conda environment:
    # If you are installing PyTorch-Neuron plus Neuron-Compiler
    conda install torch-neuron
 
-NOTE 1: The framework Conda packages already include ``neuron-cc``
-packages for compilation so there's no need to install them separately.
-NOTE 2: The ``tensorflow-neuron`` Conda package comes with
-TensorBoard-Neuron. There is no standalone ``tensorboard-neuron`` Conda
-package at this time.
+.. note::
 
-.. raw:: html
+  The framework Conda packages already include ``neuron-cc`` packages for compilation so there's no need to install them separately.
 
-   <details><summary><b>Optional:</b> To verify the packages before install (using tensorflow-neuron as an example)
-   </summary>
-   <p>
+.. note::
 
-.. code:: bash
+   The ``tensorflow-neuron`` Conda package comes with TensorBoard-Neuron. There is no standalone ``tensorboard-neuron`` Conda package at this time.
 
-   curl https://conda.repos.neuron.amazonaws.com/GPG-PUB-KEY-AMAZON-AWS-NEURON.PUB | gpg --import
+.. note::
 
-   # This shows the version/build number of the package
-   conda search tensorflow-neuron
+  .. toggle-header::
+      :header: **Optional**: to verify the packages before install (using tensorflow-neuron as an example **click** 
+  
+      .. code:: bash
+  
+        curl https://conda.repos.neuron.amazonaws.com/GPG-PUB-KEY-AMAZON-AWS-NEURON.PUB | gpg --import
+  
+        # This shows the version/build number of the package
+        conda search tensorflow-neuron
 
-   # Use the version/build number above to download the package and the signature
-   wget https://conda.repos.neuron.amazonaws.com/linux-64/tensorflow-neuron-<VERSION FROM FILE>-py36_0.tar.bz2
-   wget https://conda.repos.neuron.amazonaws.com/linux-64/tensorflow-neuron-<VERSION FROM FILE>-py36_0.tar.bz2.asc
-   gpg --verify tensorflow-neuron-<VERSION FROM FILE>-py36_0.tar.bz2.asc tensorflow-neuron-<VERSION FROM FILE>-py36_0.tar.bz2
+       # Use the version/build number above to download the package and the signature
+       wget https://conda.repos.neuron.amazonaws.com/linux-64/tensorflow-neuron-<VERSION FROM FILE>-py36_0.tar.bz2
+       wget https://conda.repos.neuron.amazonaws.com/linux-64/tensorflow-neuron-<VERSION FROM FILE>-py36_0.tar.bz2.asc
+       gpg --verify tensorflow-neuron-<VERSION FROM FILE>-py36_0.tar.bz2.asc tensorflow-neuron-<VERSION FROM FILE>-py36_0.tar.bz2
 
-.. raw:: html
 
-   </p>
-   </details>
 
-AWS Deep Learning AMI
----------------------
 
-Refer to the `AWS DLAMI Getting
-Started <https://docs.aws.amazon.com/dlami/latest/devguide/gs.html>`__
-guide to learn how to use the DLAMI with Neuron. When first using a
-released DLAMI, there may be additional updates to the Neuron packages
-installed in it.
-
-NOTE: Only DLAMI versions 26.0 and newer have Neuron support included.
-
-DL Containers
--------------
-
-For containerized applications, it is recommended to use the neuron-rtd
-container, more details `here <./neuron-container-tools/README.md>`__.
-Inferentia support for `AWS DL
-Containers <https://docs.aws.amazon.com/dlami/latest/devguide/deep-learning-containers-ec2.html>`__
-is coming soon.

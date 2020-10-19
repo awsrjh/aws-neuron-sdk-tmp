@@ -34,7 +34,7 @@ release = '1.8.0'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 #extensions = ['sphinx.ext.autodoc', 'sphinx.ext.napoleon','nbsphinx','recommonmark']
-extensions = ['sphinx.ext.autodoc', 'sphinx.ext.napoleon']
+extensions = ['sphinx.ext.autodoc', 'sphinx.ext.napoleon','sphinxcontrib.contentui','nbsphinx']
 #extensions = ['sphinx.ext.autodoc', 'sphinx.ext.napoleon','nbsphinx','sphinx.ext.autosectionlabel','recommonmark']
 #extensions = ['sphinx.ext.autodoc', 'sphinx.ext.napoleon']
 #extensions = [ ]
