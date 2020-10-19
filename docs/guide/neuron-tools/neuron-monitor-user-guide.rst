@@ -669,4 +669,4 @@ runtime with the index ``rt_index`` as described
 rename any item. By changing the ``create_common_dims`` function you can
 control what dimensions are assigned to all the metrics.
 
-.. |image| image:: ../images/nm-img1.png
+.. |image| image:: /images/nm-img1.png

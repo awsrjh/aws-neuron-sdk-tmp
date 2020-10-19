@@ -377,17 +377,17 @@ information on a tensor, you can click on a tensor’s value. You may also
 hover over the bar in the “Health Pill” column for a more detailed
 summary of values. |image13|
 
-.. |image| image:: ../images/tb-img1.png
-.. |image1| image:: ../images/tb-img2.png
-.. |image2| image:: ../images/tb-img3.png
-.. |image3| image:: ../images/tb-img4.png
-.. |image4| image:: ../images/tb-img5.png
-.. |image5| image:: ../images/tb-img6.png
-.. |image6| image:: ../images/tb-img7.png
-.. |image7| image:: ../images/tb-img8.png
-.. |image8| image:: ../images/tb-img9.png
-.. |image9| image:: ../images/tb-img10.png
-.. |image10| image:: ../images/tb-img11.png
-.. |image11| image:: ../images/tb-img12.png
-.. |image12| image:: ../images/tb-img13.png
-.. |image13| image:: ../images/tb-img14.png
+.. |image| image:: /images/tb-img1.png
+.. |image1| image:: /images/tb-img2.png
+.. |image2| image:: /images/tb-img3.png
+.. |image3| image:: /images/tb-img4.png
+.. |image4| image:: /images/tb-img5.png
+.. |image5| image:: /images/tb-img6.png
+.. |image6| image:: /images/tb-img7.png
+.. |image7| image:: /images/tb-img8.png
+.. |image8| image:: /images/tb-img9.png
+.. |image9| image:: /images/tb-img10.png
+.. |image10| image:: /images/tb-img11.png
+.. |image11| image:: /images/tb-img12.png
+.. |image12| image:: /images/tb-img13.png
+.. |image13| image:: /images/tb-img14.png
