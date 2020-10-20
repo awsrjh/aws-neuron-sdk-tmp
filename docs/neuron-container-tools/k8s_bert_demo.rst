@@ -24,6 +24,7 @@ Step 1: Build an example tensorflow serving container
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Use the following dockerfile: :download:`tensorflow-model-server-neuron Dockerfile <docker-example/Dockerfile.tf-serving>`
+
 .. code:: bash
 
    docker build . -f Dockerfile.tf-serving  -t tf-serving-ctr
