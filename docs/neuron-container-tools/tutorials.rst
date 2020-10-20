@@ -17,7 +17,7 @@ Tutorials & Examples
    :maxdepth: 1
    :caption: Examples
 
-   docker-example/Dockerfile.neuron-rtd
-   docker-example/Dockerfile.tf-serving
+   docker-example/Dockerfile-neuron-rtd
+   docker-example/Dockerfile-tf-serving
    
    

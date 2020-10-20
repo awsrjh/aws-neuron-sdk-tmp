@@ -9,15 +9,14 @@ into their workflows.
 
 A device plugin is provided which advertises Inferentia devices as a
 system hardware resource. It is deployed to a cluster as a daemon set
-using the provided:
-`k8s-neuron-device-plugin.yml <./k8s-neuron-device-plugin.yml>`__. This
+using the provided: :download:`k8s-neuron-device-plugin.yml <../../docs/neuron-container-tools/k8s-neuron-device-plugin.yml>`  This
 tutorial will go through deploying the daemon set and running an example
 application.
 
 Prerequisite:
 ^^^^^^^^^^^^^
 
--  `Docker environment setup for Neuron <./tutorial-docker.md>`__: to
+-  :ref:`tutorial-docker-env-setup-for-neuron`: to
    setup Docker support on worker nodes.
 -  Inf1 instances as worker nodes with attached roles allowing:
 
@@ -74,6 +73,5 @@ pages per inferentia device, therefore, *hugepages-2Mi* has to be set to
 Step 2: Optional: Deploy an application requiring Inferentia resource
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The `Deploy BERT as a k8s
-service <./../../src/examples/tensorflow/k8s_bert_demo/README.md>`__
+The :ref:`example-deploy-bert-as-k8s-service`
 tutorial provides an example how to use k8s with Inferentia.

@@ -10,8 +10,7 @@ docker containers.
 Prerequisites:
 --------------
 
--  Please ensure the steps from the guide on `Neuron TensorFlow
-   Serving <./../../tensorflow-neuron/tutorial-tensorflow-serving.md>`__
+-  Please ensure the steps from the guide on :ref:`tensorflow-serving`
    were completed successfully before continuing.
 
 Steps:
@@ -22,8 +21,7 @@ Step 1: Start neuron-rtd container:
 
 You may choose to use the following neuron-rtd image:
 [790709498068.dkr.ecr.us-east-1.amazonaws.com/neuron-rtd:latest], or
-build your own image as shown in `Neuron Runtime
-Dockerfile <./Dockerfile.neuron-rtd>`__.
+build your own image as shown in :ref:`neuron-runtime-dockerfile`.
 
 Run neuron-rtd container as shown below. A volume must be mounted to
 :/sock where neuron-rtd will open a UDS socket. The application can
@@ -42,7 +40,7 @@ Step 2: Start application (tensorflow serving) container:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Build tensorflow-model-server-neuron image using provided example
-dockerfile `Dockerfile.tf-serving <./Dockerfile.tf-serving>`__.
+dockerfile :ref:`tensorflow-model-server-neuron-dockerfile`.
 
 Run assuming a compiled saved model was stored in s3:///my_model/
 
@@ -62,5 +60,4 @@ Run assuming a compiled saved model was stored in s3:///my_model/
 Step 3: Verify by running an inference!
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-As shown in `Neuron TensorFlow
-Serving <./../../tensorflow-neuron/tutorial-tensorflow-serving.md>`__
+As shown in :ref:`tensorflow-serving`

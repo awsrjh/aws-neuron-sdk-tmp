@@ -1,3 +1,5 @@
+.. _tutorial-docker-env-setup-for-neuron:
+
 Tutorial: Docker environment setup for Neuron
 =============================================
 
@@ -141,8 +143,7 @@ Expected result:
    For more examples and ideas, visit:
    https://docs.docker.com/get-started/
 
-Build a docker image using provided dockerfile `Neuron Runtime
-Dockerfile <./docker-example/Dockerfile.neuron-rtd>`__, and use to
+Build a docker image using provided dockerfile :ref:`neuron-runtime-dockerfile` and use to
 verify whitelisting:
 
 .. code:: bash

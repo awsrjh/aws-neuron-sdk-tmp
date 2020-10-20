@@ -20,6 +20,8 @@ For this demo, launch two EC2 instances :
 For both of these instances choose the latest Ubuntu 18 Deep Learning
 AMI (DLAMI).
 
+.. _compiling-neuron-compatible-bert-large:
+
 Compiling Neuron compatible BERT-Large
 --------------------------------------
 

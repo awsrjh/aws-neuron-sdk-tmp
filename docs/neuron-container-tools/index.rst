@@ -23,8 +23,7 @@ possible to use port-forwarding.
 
 A neuron-rtd container is available over ECR repositories and can be
 used directly. Customers may also build their own using Neuron packages,
-as shown in `Neuron Runtime
-Dockerfile <./docker-example/Dockerfile.neuron-rtd>`__
+as shown in :ref:`neuron-runtime-dockerfile`
 
 Official neuron-rtd container:
 790709498068.dkr.ecr.us-east-1.amazonaws.com/neuron-rtd:latest

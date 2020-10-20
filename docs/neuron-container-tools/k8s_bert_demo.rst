@@ -1,3 +1,5 @@
+.. _example-deploy-bert-as-k8s-service:
+
 Example: Deploy BERT as a k8s service
 =====================================
 
@@ -21,9 +23,7 @@ Prerequisite:
 Step 1: Build an example tensorflow serving container
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Use the following dockerfile: `tensorflow-model-server-neuron
-Dockerfile <../../../../docs/neuron-container-tools/docker-example/Dockerfile.tf-serving>`__
-
+Use the following dockerfile: `tensorflow-model-server-neuron Dockerfile <../../../../docs/neuron-container-tools/docker-example/Dockerfile.tf-serving>`__
 .. code:: bash
 
    docker build . -f Dockerfile.tf-serving  -t tf-serving-ctr
@@ -34,9 +34,7 @@ Step 2: Compile and place your saved model in an S3 bucket
 Follow this step in BERT example below to compile BERT into a saved
 model:
 
-`Running BERT-Large with AWS
-Neuron <./../bert_demo/README.md#compiling-neuron-compatible-bert-large>`__
-*Section: Compile open source BERT-Large saved model using Neuron
+:ref:`compiling-neuron-compatible-bert-large` Section: Compile open source BERT-Large saved model using Neuron
 compatible BERT-Large implementation*
 
 The following instructions assume that the saved model is in s3 bucket
