@@ -59,9 +59,10 @@ Steps Overview:
 
 1. Launch a ``c5.4xlarge`` instance for compilation and ``inf1.6xlarge``
    for inference.
-2. Install Neuron for compiler and runtime execution as shown in :ref:`tensorflow-resnet50`
-
-3. Run the example up to step 5.1 as shown in :ref:`tensorflow-resnet50`.
+2. Install Neuron for compiler and runtime execution as shown in
+   :ref:`tensorflow-resnet50`
+3. Run the example up to step 5.1 as shown in
+   :ref:`tensorflow-resnet50`.
 4. Step 5.2 is replaced by one of the following two scenarios
    demonstrating inference using multiple NeuronCore Groups
 

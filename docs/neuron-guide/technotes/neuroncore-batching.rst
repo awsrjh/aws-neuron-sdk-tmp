@@ -82,20 +82,21 @@ inference requests with arbitrary batch size:
 
 .. note::
 
-  Users should temporarily use the following compilation flags
-  when batch size is larger than 1:
-  ``--batching_en --rematerialization_en --spill_dis --sb_size <(batch_size + 6)*10> --enable-replication=True``.
-  These flags are only applicable to CNNs (ResNet50 and similar models)
-  and will be deprecated in the future.
+   Users should temporarily use the following compilation flags when
+   batch size is larger than 1:
+   ``--batching_en --rematerialization_en --spill_dis --sb_size <(batch_size + 6)*10> --enable-replication=True``.
+   These flags are only applicable to CNNs (ResNet50 and similar models)
+   and will be deprecated in the future.
 
 .. note::
 
-  Depending on the neural network size, Neuron will have a
-  maximum batch size that works optimally on Inferentia. Currently, FP16
-  ResNet50 is supported up to batch 5 only. Additionally, ResNet50 with
-  FP32 input is limited to batch 1 only. These limitations are being
-  addressed and will be fixed in a future releases of the compiler. If a
-  unsupported batch size is used, an internal compiler error message will
-  be displayed (see `Known Issues <./performance-tuning.md#known-issues>`__).
+   Depending on the neural network size, Neuron will have a maximum
+   batch size that works optimally on Inferentia. Currently, FP16
+   ResNet50 is supported up to batch 5 only. Additionally, ResNet50 with
+   FP32 input is limited to batch 1 only. These limitations are being
+   addressed and will be fixed in a future releases of the compiler. If
+   a unsupported batch size is used, an internal compiler error message
+   will be displayed (see `Known
+   Issues <./performance-tuning.md#known-issues>`__).
 
 .. |Image:| image:: ./images/NeuronCoreBatching.png

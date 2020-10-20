@@ -24,8 +24,9 @@ set to the group size:
    sym, args, auxs = neuron.compile(sym, args, auxs, inputs, **compile_args)
 
 Before starting this example, please ensure that mxnet-neuron is
-installed along with the Neuron Compiler (see :ref:`mxnet-resnet50`) and Neuron runtime is running
-with default settings (see :ref:`rtd-getting-started` ).
+installed along with the Neuron Compiler (see :ref:`mxnet-resnet50`) and
+Neuron runtime is running with default settings (see
+:ref:`rtd-getting-started` ).
 
 Compile Model
 -------------

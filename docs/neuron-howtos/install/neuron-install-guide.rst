@@ -3,7 +3,9 @@
 Neuron Install Guide - Configuring Linux for repository updates
 ===============================================================
 
-Neuron is using standard package managers (apt, yum, pip, and conda) to install and keep updates current. Please refer to the applicable Linux section for detailed configuration steps.
+Neuron is using standard package managers (apt, yum, pip, and conda) to
+install and keep updates current. Please refer to the applicable Linux
+section for detailed configuration steps.
 
 Neuron supports Python versions 3.5, 3.6, and 3.7.
 
@@ -25,12 +27,14 @@ Ubuntu 16
 
 .. note::
 
-  If you see the following errors during apt-get install, please wait a minute or so for background updates to finish and retry apt-get install:
+   If you see the following errors during apt-get install, please wait a
+   minute or so for background updates to finish and retry apt-get
+   install:
 
-  .. code:: bash
+   .. code:: bash
 
-     E: Could not get lock /var/lib/dpkg/lock-frontend - open (11: Resource temporarily unavailable)
-     E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), is another process using it?
+      E: Could not get lock /var/lib/dpkg/lock-frontend - open (11: Resource temporarily unavailable)
+      E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), is another process using it?
 
 Ubuntu 18
 ---------
@@ -50,7 +54,9 @@ Ubuntu 18
 
 .. note::
 
-   If you see the following errors during apt-get install, please wait a minute or so for background updates to finish and retry apt-get install:
+   If you see the following errors during apt-get install, please wait a
+   minute or so for background updates to finish and retry apt-get
+   install:
 
    .. code:: bash
 
@@ -78,7 +84,9 @@ Amazon Linux, Centos, RHEL
 Neuron Pip Packages
 -------------------
 
-It is recommended to use a virtual environment when installing Neuron pip packages. The following steps show how to setup the virtual environment on Ubuntu or Amazon Linux:
+It is recommended to use a virtual environment when installing Neuron
+pip packages. The following steps show how to setup the virtual
+environment on Ubuntu or Amazon Linux:
 
 .. code:: bash
 
@@ -109,23 +117,23 @@ Modify Pip repository configurations to point to the Neuron repository:
    extra-index-url = https://pip.repos.neuron.amazonaws.com
    EOF
 
-
 .. note::
 
-  .. toggle-header::
-      :header: **Optional**: To verify the packages before install (using neuron-cc as an example) **click** 
+   .. container:: toggle-header
 
-        .. code:: bash
+      .. code:: bash
 
-          curl https://pip.repos.neuron.amazonaws.com/GPG-PUB-KEY-AMAZON-AWS-NEURON.PUB | gpg --import
-          pip download --no-deps neuron-cc
-          # The above shows you the name of the package downloaded
-          # Use it in the following command
-          wget https://pip.repos.neuron.amazonaws.com/neuron-cc/neuron_cc-<VERSION FROM FILE>.whl.asc
-          gpg --verify neuron_cc-<VERSION FROM FILE>.whl.asc neuron_cc-<VERSION FROM FILE>.whl
+         curl https://pip.repos.neuron.amazonaws.com/GPG-PUB-KEY-AMAZON-AWS-NEURON.PUB | gpg --import
+         pip download --no-deps neuron-cc
+         # The above shows you the name of the package downloaded
+         # Use it in the following command
+         wget https://pip.repos.neuron.amazonaws.com/neuron-cc/neuron_cc-<VERSION FROM FILE>.whl.asc
+         gpg --verify neuron_cc-<VERSION FROM FILE>.whl.asc neuron_cc-<VERSION FROM FILE>.whl
 
-
-The following Pip installation commands assume you are using a virtual Python environment (see above for instructions on how to setup a virtual Python environment). If not using virtual Python environment, please switch 'pip' with 'pip3' as appropriate for your Python environment.
+The following Pip installation commands assume you are using a virtual
+Python environment (see above for instructions on how to setup a virtual
+Python environment). If not using virtual Python environment, please
+switch 'pip' with 'pip3' as appropriate for your Python environment.
 
 TensorFlow
 ~~~~~~~~~~
@@ -176,7 +184,6 @@ PyTorch
 
 .. code:: bash
 
-
    #NOTE please make sure [tensorflow] option is provided during installation of neuron-cc for PyTorch-Neuron compilation; this is not necessary for PyTorch-Neuron inference.
    pip install neuron-cc[tensorflow]
    pip install torch-neuron
@@ -186,9 +193,9 @@ Neuron Conda Packages
 
 The following commands assumes you are using a Conda environment and
 have already activated it. Please see
-`https://docs.conda.io/projects/conda/en/latest/user-guide/install/ <https://docs.conda.io/projects/conda/en/latest/user-guide/install/>`__
-for installation instruction if Conda is not installed. The following
-steps are example steps to install and activate Conda environment:
+https://docs.conda.io/projects/conda/en/latest/user-guide/install/ for
+installation instruction if Conda is not installed. The following steps
+are example steps to install and activate Conda environment:
 
 .. code:: bash
 
@@ -217,29 +224,27 @@ steps are example steps to install and activate Conda environment:
 
 .. note::
 
-  The framework Conda packages already include ``neuron-cc`` packages for compilation so there's no need to install them separately.
+   The framework Conda packages already include ``neuron-cc`` packages
+   for compilation so there's no need to install them separately.
 
 .. note::
 
-   The ``tensorflow-neuron`` Conda package comes with TensorBoard-Neuron. There is no standalone ``tensorboard-neuron`` Conda package at this time.
+   The ``tensorflow-neuron`` Conda package comes with
+   TensorBoard-Neuron. There is no standalone ``tensorboard-neuron``
+   Conda package at this time.
 
 .. note::
 
-  .. toggle-header::
-      :header: **Optional**: to verify the packages before install (using tensorflow-neuron as an example **click** 
-  
+   .. container:: toggle-header
+
       .. code:: bash
-  
-        curl https://conda.repos.neuron.amazonaws.com/GPG-PUB-KEY-AMAZON-AWS-NEURON.PUB | gpg --import
-  
-        # This shows the version/build number of the package
-        conda search tensorflow-neuron
 
-       # Use the version/build number above to download the package and the signature
-       wget https://conda.repos.neuron.amazonaws.com/linux-64/tensorflow-neuron-<VERSION FROM FILE>-py36_0.tar.bz2
-       wget https://conda.repos.neuron.amazonaws.com/linux-64/tensorflow-neuron-<VERSION FROM FILE>-py36_0.tar.bz2.asc
-       gpg --verify tensorflow-neuron-<VERSION FROM FILE>-py36_0.tar.bz2.asc tensorflow-neuron-<VERSION FROM FILE>-py36_0.tar.bz2
+         curl https://conda.repos.neuron.amazonaws.com/GPG-PUB-KEY-AMAZON-AWS-NEURON.PUB | gpg --import
 
+         # This shows the version/build number of the package
+         conda search tensorflow-neuron
 
-
-
+         # Use the version/build number above to download the package and the signature
+         wget https://conda.repos.neuron.amazonaws.com/linux-64/tensorflow-neuron-<VERSION FROM FILE>-py36_0.tar.bz2
+         wget https://conda.repos.neuron.amazonaws.com/linux-64/tensorflow-neuron-<VERSION FROM FILE>-py36_0.tar.bz2.asc
+         gpg --verify tensorflow-neuron-<VERSION FROM FILE>-py36_0.tar.bz2.asc tensorflow-neuron-<VERSION FROM FILE>-py36_0.tar.bz2

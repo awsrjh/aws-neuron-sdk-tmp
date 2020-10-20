@@ -22,7 +22,7 @@ For maximal performance, users should choose an instance-size that can
 cache the entire model by using sufficient NeuronCores. Inf1 instance
 types have different number of Inferentia devices, each of which has 4
 NeuronCores, as shown here
-`https://aws.amazon.com/ec2/instance-types/inf1/ <https://aws.amazon.com/ec2/instance-types/inf1/>`__
+https://aws.amazon.com/ec2/instance-types/inf1/
 
 To enable the NeuronCore Pipeline optimization, the compiler should be
 invoked with the following flags: ``--num-neuroncores N``. The number of
@@ -48,9 +48,9 @@ Pipeline for 16 NeuronCores (instance size inf1.6xlarge).
 
 .. note::
 
-  Currently, experimental flag ‘—static-weights’ is required as
-  shown in the example to enable caching of weights on the device. This
-  would help increase performance by decreasing weight fetch time. The
-  flag will be enabled by default in a future release.
+   Currently, experimental flag ‘—static-weights’ is required as shown
+   in the example to enable caching of weights on the device. This would
+   help increase performance by decreasing weight fetch time. The flag
+   will be enabled by default in a future release.
 
 .. |Image:| image:: ./images/NeuronCorePipelining.png

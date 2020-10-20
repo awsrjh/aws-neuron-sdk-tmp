@@ -9,10 +9,10 @@ tutorial, please use an ``inf1.6xlarge`` instance, which has 16
 NeuronCores.
 
 First step is to setup ``c5.4xlarge`` for compilation as described in
-steps 1 and 2 of :ref:`tensorflow-resnet50`.  Repeat the setup steps for ``inf1.6xlarge`` instance. In addition,
-install Neuron Runtime on Inf1 following the steps here: :ref:`rtd-getting-started`
-Also, download the example source on both ``c5.4xlarge`` and
-``inf1.6xlarge``:
+steps 1 and 2 of :ref:`tensorflow-resnet50`. Repeat the setup steps for
+``inf1.6xlarge`` instance. In addition, install Neuron Runtime on Inf1
+following the steps here: :ref:`rtd-getting-started` Also, download the
+example source on both ``c5.4xlarge`` and ``inf1.6xlarge``:
 
 .. code:: bash
 
@@ -22,7 +22,7 @@ Also, download the example source on both ``c5.4xlarge`` and
 .. _compilation-on-c54xlarge:
 
 Compilation on ``c5.4xlarge``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------
 
 On ``c5.4xlarge``, run compilation by following the steps below.
 
@@ -127,7 +127,7 @@ instance that was setup previously and unzip them in the
 .. _inference-on-inf16xlarge:
 
 Inference on ``inf1.6xlarge``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------
 
 Run inference over different batch sizes to obtain throughput and
 latency results for ResNet50 replicated on four NeuronCores. To apply
@@ -145,8 +145,9 @@ framework-to-Neuron overhead.
 The file batch.log now contains the results for each batch size.
 
 .. note::
-  the results are based on Neuron 1/27/20 release. These will
-  continue improve as we increase Neuron performance.
+
+   the results are based on Neuron 1/27/20 release. These will continue
+   improve as we increase Neuron performance.
 
 .. code:: bash
 
@@ -216,10 +217,10 @@ The file batch.log now contains the results for each batch size.
    Compiled batch size 5, user batch size 50, throughput stats (images/sec): max=6550 p99=6550 p50=6400, avg latency 251.6603 sec/user-batch
 
 Known Issues
-------------
+~~~~~~~~~~~~
 
 Unable to compile with batch and num NeuronCores combination
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------------------------------------
 
 For some combination of batch and number of NeuronCores setting, you may
 see an internal compiler error as below. Please see the sweep result

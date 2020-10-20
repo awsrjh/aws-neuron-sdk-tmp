@@ -3,7 +3,8 @@
 Working with YOLO v4 using AWS Neuron SDK
 =========================================
 
-The :doc:`evaluate` notebook contains an example on how to take an open source YOLO v4 models, and run it on AWS Inferentia.
+The :doc:`evaluate` notebook contains an example on how to take an open
+source YOLO v4 models, and run it on AWS Inferentia.
 
 Optimizing image pre-processing and post-processing for object detection models
 -------------------------------------------------------------------------------
@@ -75,8 +76,8 @@ Another difference of our implementation is the treatment of non-max
 suppression, a commmonly used operation for removing redundant bounding
 boxes that overlap with other boxes. In an object detection scenario
 represented by the COCO dataset where the number of output classes is
-large, the hand-fused
-```tf.image.combined_non_max_suppression`` <https://www.tensorflow.org/versions/r1.15/api_docs/python/tf/image/combined_non_max_suppression>`__
+large, the hand-fused :literal:`\`tf.image.combined_non_max_suppression`
+<https://www.tensorflow.org/versions/r1.15/api_docs/python/tf/image/combined_non_max_suppression>`_\_
 operator can parallelize multi-class NMS on CPU in a very efficient
 manner. With proper use of this operator, the bounding box
 post-processing step has a less chance of becoming the performance

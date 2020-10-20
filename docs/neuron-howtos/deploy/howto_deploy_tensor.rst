@@ -2,7 +2,3 @@
 
 Deploying Neuron TensorFlow
 ===========================
-
-
-
-

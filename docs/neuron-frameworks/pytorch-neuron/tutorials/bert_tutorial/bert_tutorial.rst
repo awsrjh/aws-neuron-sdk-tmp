@@ -11,9 +11,8 @@ applications, it can be used for question answering, sequence prediction
 and sequence classification amongst other tasks.
 
 **Note that automatic partitioning is now released!**. Use the
-auto-partitioner on BERT as described 
-`in this Jupyter notebook <tutorial_pretrained_bert.ipynb>`__. 
-Use of the
+auto-partitioner on BERT as described `in this Jupyter
+notebook <tutorial_pretrained_bert.ipynb>`__. Use of the
 auto-partitioner is the normal way to compile BERT with PyTorch Neuron.
 It's not only easier, but also expected to be performant!
 
@@ -141,7 +140,6 @@ STEP 2: SSH to your instance with port forwarding. Configure the AWS CLI
    pane of the AWS EC2 console. Once the instance is started right click
    connect and select “Connect” to see the PEM and DNS name to use for
    this instance
-
 2. From you laptop or desktop:
 
 ``ssh -i <my pem file> ubuntu@<my DNS name>``

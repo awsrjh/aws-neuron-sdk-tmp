@@ -2,8 +2,3 @@
 
 Deploying Neuron PyTorch
 ========================
-
-
-
-
-

@@ -4,14 +4,14 @@ Running OpenPose on Inferentia
 ==============================
 
 Acknowledgement
-~~~~~~~~~~~~~~~
+---------------
 
 Many thanks to https://github.com/ildoonet/tf-pose-estimation for
 providing pretrained model as well as the image preprocessing/pose
 estimating infrastructure.
 
 Steps
-~~~~~
+-----
 
 1. (Optional) Launch compilation instance. We recommend *z1d.xlarge*
    (highest single-core performance) + *Deep Learning AMI (Ubuntu 18.04)

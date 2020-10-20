@@ -9,18 +9,18 @@ provide an explanation of what happened and what can potentially correct
 the issue.
 
 If you haven't read it already, please familiarize yourself with our
-:ref:`rtd-getting-started`  documentation and usage examples.
-If your issue is still not resolved or you have a more nuanced problem,
-contact us via `issues <https://github.com/aws/aws-neuron-sdk/issues>`__
-posted to this repo, the `AWS Neuron developer
+:ref:`rtd-getting-started` documentation and usage examples. If your
+issue is still not resolved or you have a more nuanced problem, contact
+us via `issues <https://github.com/aws/aws-neuron-sdk/issues>`__ posted
+to this repo, the `AWS Neuron developer
 forum <https://forums.aws.amazon.com/forum.jspa?forumID=355>`__, or
 through AWS support.
 
 What is going wrong?
-####################
+--------------------
 
 Runtime installation failed
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 There are a few reasons this might occur. Here's a list of things to
 double check on:
@@ -128,13 +128,24 @@ start <#neuron-services-fail-to-start>`__ for more help. The components
 are likely installed at this point, but you're experiencing a problem
 related to the startup, which is attempted during install.
 
-
 Neuron Runtime services fail to start
--------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-There are two different runtime services, neuron-rtd and neuron-discovery, that are needed for correct functionality of an Inf1 instance. If neuron-discovery is failing, you might have a system configuration issue. Try running on a different instance and if the problem persists contact us via `issues <https://github.com/aws/aws-neuron-sdk/issues>`__, the `AWS Neuron developer forum <https://forums.aws.amazon.com/forum.jspa?forumID=355>`__, or through AWS support.
+There are two different runtime services, neuron-rtd and
+neuron-discovery, that are needed for correct functionality of an Inf1
+instance. If neuron-discovery is failing, you might have a system
+configuration issue. Try running on a different instance and if the
+problem persists contact us via
+`issues <https://github.com/aws/aws-neuron-sdk/issues>`__, the `AWS
+Neuron developer
+forum <https://forums.aws.amazon.com/forum.jspa?forumID=355>`__, or
+through AWS support.
 
-If the neuron-rtd service is failing to start, you may be experiencing failure due to (1) a conflict with another instance of neuron-rtd, (2) insufficient number of hugepages allocated by the OS, or (3) a lack of system privileges needed to start the service. Read on for more details on each scenario.
+If the neuron-rtd service is failing to start, you may be experiencing
+failure due to (1) a conflict with another instance of neuron-rtd, (2)
+insufficient number of hugepages allocated by the OS, or (3) a lack of
+system privileges needed to start the service. Read on for more details
+on each scenario.
 
 Another Instance of Runtime is Running
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -204,15 +215,14 @@ How To Fix?
 '''''''''''
 
 Detailed information on how to configure the number of hugepages on an
-instance is documented
-:ref:`config-nr-hugepages`. If you're
-hitting this issue due to your AMI being built on an instance that has
-less Inferntias than the target it's lauched on, there's two ways to fix
-the issue. Either update the configuration of the AMI to be specific to
-the Inf1 instance type, or create a script to set the number of
-hugepages at boot. The scripted approach is currently part of the DLAMI
-if you need an example to follow. Please see further instruction on how
-to configure the number of hugepages :ref:`config-nr-hugepages`.
+instance is documented :ref:`config-nr-hugepages`. If you're hitting
+this issue due to your AMI being built on an instance that has less
+Inferntias than the target it's lauched on, there's two ways to fix the
+issue. Either update the configuration of the AMI to be specific to the
+Inf1 instance type, or create a script to set the number of hugepages at
+boot. The scripted approach is currently part of the DLAMI if you need
+an example to follow. Please see further instruction on how to configure
+the number of hugepages :ref:`config-nr-hugepages`.
 
 TODO: provide a script.
 
@@ -252,7 +262,7 @@ Ensure neuron-rtd is always started as sudo or root.
 --------------
 
 Load Model Failure
-------------------
+~~~~~~~~~~~~~~~~~~
 
 There are a variety of reasons for a model load to fail. The most common
 ones are listed below. If the solutions below are insufficient, please
@@ -323,8 +333,8 @@ How To Fix?
 Use compatible versions of Neuron Compiler and Runtime. Updating to the
 latest version of both Neuron Compiler and Neuron Runtime is the
 simplest solution. If updating one of the two is not an option, please
-refer to the `release notes </release-notes/neuron-runtime>`__
-of the Neuron Runtime to determine NEFF version support.
+refer to the `release notes </release-notes/neuron-runtime>`__ of the
+Neuron Runtime to determine NEFF version support.
 
 Invalid NEFF
 ^^^^^^^^^^^^
@@ -474,7 +484,7 @@ size with additional NeuronCores may help.
 --------------
 
 Inferences are failing
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~
 
 Wrong Model Id
 ^^^^^^^^^^^^^^
@@ -605,9 +615,8 @@ Report issue to Neuron by posting the relevant details on GitHub
 `issues <https://github.com/aws/aws-neuron-sdk/issues>`__.
 
 Additional helpers
-##################
+------------------
 
 `Getting Started Guide <./nrt_start.md>`__
 
 `Error Codes <./nrt-return-codes.md>`__
-

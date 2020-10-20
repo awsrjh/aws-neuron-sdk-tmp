@@ -13,7 +13,7 @@ Step 1: Launch an Inf1 Instance
    or Amazon Linux 2 based. Refer to the `Neuron installation
    guide <../neuron-install-guide.md>`__ for details.
 2. Select an Inf1 instance size of your choice (see
-   `https://aws.amazon.com/ec2/instance-types/inf1/ <https://aws.amazon.com/ec2/instance-types/inf1/>`__)
+   https://aws.amazon.com/ec2/instance-types/inf1/)
 
 Step 2: Install Neuron-RTD
 --------------------------
@@ -44,7 +44,7 @@ UBUNTU 16
    EOF
 
    wget -qO - https://apt.repos.neuron.amazonaws.com/GPG-PUB-KEY-AMAZON-AWS-NEURON.PUB | sudo apt-key add -
-    
+
    sudo apt-get update
    sudo apt-get install aws-neuron-runtime
    sudo apt-get install aws-neuron-tools
@@ -59,7 +59,7 @@ UBUNTU 18
    EOF
 
    wget -qO - https://apt.repos.neuron.amazonaws.com/GPG-PUB-KEY-AMAZON-AWS-NEURON.PUB | sudo apt-key add -
-    
+
    sudo apt-get update
    sudo apt-get install aws-neuron-runtime
    sudo apt-get install aws-neuron-tools

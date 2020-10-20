@@ -6,11 +6,12 @@ Tutorial: MXNet-Neuron Model Serving
 This Neuron MXNet Model Serving (MMS) example is adapted from the MXNet
 vision service example which uses pretrained squeezenet to perform image
 classification:
-`https://github.com/awslabs/multi-model-server/tree/master/examples/mxnet_vision <https://github.com/awslabs/multi-model-server/tree/master/examples/mxnet_vision>`__.
+https://github.com/awslabs/multi-model-server/tree/master/examples/mxnet_vision.
 
 Before starting this example, please ensure that Neuron-optimized MXNet
-version mxnet-neuron is installed along with Neuron Compiler (see :ref:`mxnet-resnet50`) and Neuron RTD is running
-with default settings (see :ref:`rtd-getting-started`. ).
+version mxnet-neuron is installed along with Neuron Compiler (see
+:ref:`mxnet-resnet50`) and Neuron RTD is running with default settings
+(see :ref:`rtd-getting-started`. ).
 
 If using DLAMI, you can activate the environment aws_neuron_mxnet_p36
 and skip the installation part in the first step below.

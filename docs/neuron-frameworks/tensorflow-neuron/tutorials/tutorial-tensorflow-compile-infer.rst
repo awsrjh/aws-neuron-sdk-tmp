@@ -22,7 +22,8 @@ models on a compilation instance and then distribute the artifacts to a
 fleet of deployment instances, for execution. Neuron enables TensorFlow
 to be used for all of these steps.
 
-1.1. Select an AMI of your choice. Refer to the :ref:`neuron-install-guide` for details.
+1.1. Select an AMI of your choice. Refer to the
+:ref:`neuron-install-guide` for details.
 
 1.2. Select and launch an EC2 instance of your choice to compile. Launch
 an instance by following `EC2 instance launch
@@ -35,7 +36,6 @@ instructions <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted
 
 1.3. Select and launch a deployment (Inf1) instance of your choice.
 
-
 Step 2: Compilation Instance Installations
 ------------------------------------------
 
@@ -44,9 +44,9 @@ TensorFlow-Neuron environment (using
 ``source activate aws_neuron_tensorflow_p36`` command). Please update
 Neuron by following update steps in :ref:`dlami-neuron-rn`.
 
-To install in your own AMI, please see :ref:`neuron-install-guide` to setup virtual environment and
-install TensorFlow-Neuron (tensorflow-neuron) and Neuron Compiler
-(neuron-cc) packages.
+To install in your own AMI, please see :ref:`neuron-install-guide` to
+setup virtual environment and install TensorFlow-Neuron
+(tensorflow-neuron) and Neuron Compiler (neuron-cc) packages.
 
 .. _tensorflow-resnet50-compile-on-compilation-instance:
 
@@ -131,7 +131,7 @@ Step 4: Deployment Instance Installations
 -----------------------------------------
 
 **If using DLAMI, activate pre-installed TensorFlow-Neuron environment
-(using ``source activate aws_neuron_tensorflow_p36`` command) and skip
+(using \``source activate aws_neuron_tensorflow_p36`\` command) and skip
 this step.**
 
 On the instance you are going to use for inference, install

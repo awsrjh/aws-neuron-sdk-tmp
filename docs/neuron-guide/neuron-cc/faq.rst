@@ -1,8 +1,8 @@
 FAQs
-----
+====
 
 Q: Where can I compile to Neuron?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------
 
 The one-time compilation step from the standard framework-level model to
 Inferentia binary may be performed on any EC2 instance or even
@@ -35,11 +35,11 @@ The compiler compiles the input graph for a single NeuronCore by
 default. Using the The “\ ``num-neuroncores``\ ” option directs compiler
 to direct compiled graph to run on a specified number of NeuronCores.
 This number can be less than the total available NeuronCores on an
-instance. See :ref:`appnote-performance-tuning` for more
-information (TODO).
+instance. See :ref:`appnote-performance-tuning` for more information
+(TODO).
 
 Q: Which operators does Neuron support?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------------
 
 see :ref:`neuron-supported-operators`.
 
@@ -47,14 +47,14 @@ If your model contains operators missing from the above list, please
 post a message on the Neuron developer forum to let us know.
 
 Q: Any operators that Neuron doesn't support?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Models with
-control-flow and dynamic shapes are not supported. You will need to
-partition the model using the framework prior to compilation. See the
-:ref:`neuron-cc`.
+---------------------------------------------
+
+Models with control-flow and dynamic shapes are not supported. You will
+need to partition the model using the framework prior to compilation.
+See the :ref:`neuron-cc`.
 
 Q: Will I need to recompile again if I updated runtime/driver version?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+----------------------------------------------------------------------
 
 The compiler and runtime are committed to maintaining compatibility for
 major version releases with each other. The versoning is defined as
@@ -66,8 +66,7 @@ the load will fail. This will then require the model to be recompiled.
 generated it?** We will bring a utility out to help with this soon.
 
 Q: How long does it take to compile?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------------------
 
-It depends on the model and its
-size and complexity, but this generally takes a few minutes.
-
+It depends on the model and its size and complexity, but this generally
+takes a few minutes.

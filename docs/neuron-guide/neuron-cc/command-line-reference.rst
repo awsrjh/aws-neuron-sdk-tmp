@@ -1,7 +1,7 @@
 .. _neuron-compiler-cli-reference:
 
 Neuron compiler CLI Reference Guide
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+===================================
 
 This document describes the command line interface of the Neuron
 compiler. This reference is not relevant for applications that run
@@ -19,7 +19,7 @@ Optional parameters are shown in square brackets. See the individual
 framework guides for the correct syntax.
 
 Synopsis
-========
+--------
 
 ::
 
@@ -30,7 +30,7 @@ Synopsis
    neuron-cc <command> --help for information on a specific command. 
 
 Common Options
-==============
+--------------
 
 ::
 
@@ -42,26 +42,26 @@ Common Options
 -  ERROR
 
 Available Commands
-==================
+------------------
 
 -  compile
 -  list-operators
 
 neuron-cc compile
-=================
+-----------------
 
 ::
 
    neuron-cc compile <file names> --framework <value> --io-config <value> [--num-neuroncores <value>] [--output <value>]
 
 Description
------------
+~~~~~~~~~~~
 
 Compile a model for use on the AWS Inferentia Machine Learning
 Accelerator.
 
 Examples
---------
+~~~~~~~~
 
 ::
 
@@ -72,20 +72,20 @@ Examples
    neuron-cc compile lenet-symbol.json lenet-0001.params --framework MXNET --num-neuroncores 2 --output out.infa —debug
 
 Options
--------
+~~~~~~~
 
-**``<file names>``** Input containing model specification. The number of
-arguments required varies between frameworks:
+**\``<file names>`\`** Input containing model specification. The number
+of arguments required varies between frameworks:
 
 -  **TENSORFLOW** A local filename or URI of a TensorFlow Frozen
    GraphDef (.pb); or the name of a local directory containing a
    TensorFlow SavedModel.
 
    See
-   `https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/framework/graph.proto <https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/framework/graph.proto>`__
+   https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/framework/graph.proto
    for the associated .proto schema for TensorFlow Frozen GraphDefs. See
-   `https://www.tensorflow.org/guide/saved_model <https://www.tensorflow.org/guide/saved_model>`__
-   for more information on the SavedModel format.
+   https://www.tensorflow.org/guide/saved_model for more information on
+   the SavedModel format.
 
 -  **MXNET** - List of local filenames or URIs where input architecture
    .json file and parameter .param file are stored. These contains
@@ -129,24 +129,24 @@ tensor names. Consider the following example:
    }
 
 STDOUT
-------
+~~~~~~
 
 Logs at levels “trace”, “debug”, and “info” will be written to STDOUT.
 
 STDERR
-------
+~~~~~~
 
 Logs at levels “warn”, “error”, and “fatal” will be written to STDERR.
 
 EXIT STATUS
------------
+~~~~~~~~~~~
 
 **0** - Compilation succeeded
 
 **>0** - An error occurred during compilation.
 
 neuron-cc list-operators
-========================
+------------------------
 
 ::
 
@@ -155,29 +155,28 @@ neuron-cc list-operators
 .. _description-1:
 
 Description
------------
+~~~~~~~~~~~
 
-Returns a newline ('\n') separated list of operators supported by the
+Returns a newline ('n') separated list of operators supported by the
 NeuronCore.
 
 -  **TENSORFLOW** - Operators will be formatted according to the value
    passed to the associated REGISTER_OP(“OperatorName”) macro.
 
    See
-   `https://www.tensorflow.org/guide/extend/op#define_the_ops_interface <https://www.tensorflow.org/guide/extend/op#define_the_ops_interface>`__
+   https://www.tensorflow.org/guide/extend/op#define_the_ops_interface
    for more information regarding operator registration in TensorFlow.
 
 -  **MXNET** - Operator names will be formatted according to the value
    passed to the associated NNVM_REGISTER_OP(operator_name) macro.
 
-   See
-   `https://mxnet.apache.org/api/faq/new_op <https://mxnet.apache.org/api/faq/new_op>`__
-   for more details regarding operator registration in MxNet.
+   See https://mxnet.apache.org/api/faq/new_op for more details
+   regarding operator registration in MxNet.
 
 -  **ONNX** - ONNX model.
 
 Example
--------
+~~~~~~~
 
 ::
 
@@ -190,7 +189,7 @@ Example
 .. _options-1:
 
 Options
--------
+~~~~~~~
 
 **--framework** (string) Framework in which the operators were
 registered.
@@ -200,15 +199,15 @@ Valid values: TENSORFLOW \| MXNET \| ONNX
 .. _stdout-1:
 
 STDOUT
-------
+~~~~~~
 
-Returns a newline ('\n') separated list of operators supported by the
+Returns a newline ('n') separated list of operators supported by the
 NeuronCore.
 
 .. _exit-status-1:
 
 EXIT STATUS
------------
+~~~~~~~~~~~
 
 **0** - Call succeeded
 
