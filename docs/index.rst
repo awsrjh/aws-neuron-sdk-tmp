@@ -21,29 +21,29 @@ AWS Neuron is an SDK for Amazon machine-learning chips, enabling high-performanc
    :maxdepth: 2
    :caption: HowTo Guides
 
-   howtos/install/index
-   howtos/deploy/index
-   howtos/perf/index
-   howtos/prof/index
+   neuron-howtos/install/index
+   neuron-howtos/deploy/index
+   neuron-howtos/perf/index
+   neuron-howtos/prof/index
    
 
 .. toctree::
    :maxdepth: 2
    :caption: Neuron Guide
 
-   Neuron Fundamentals <guide/technotes/index>
-   Neuron Compiler <guide/neuron-cc/index>
-   Neuron Runtime <guide/neuron-runtime/index>
-   Neuron Tools <guide/neuron-tools/index>
+   Neuron Fundamentals <neuron-guide/technotes/index>
+   Neuron Compiler <neuron-guide/neuron-cc/index>
+   Neuron Runtime <neuron-guide/neuron-runtime/index>
+   Neuron Tools <neuron-guide/neuron-tools/index>
 
 
 .. toctree::
    :maxdepth: 2
    :caption: Neuron Frameworks
 
-   TensorFlow Neuron <ml_frameworks/tensorflow-neuron/index>
-   PyTorch Neuron <ml_frameworks/pytorch-neuron/index>
-   MXNet Neuron <ml_frameworks/mxnet-neuron/index>
+   TensorFlow Neuron <neuron-frameworks/tensorflow-neuron/index>
+   PyTorch Neuron <neuron-frameworks/pytorch-neuron/index>
+   MXNet Neuron <neuron-frameworks/mxnet-neuron/index>
 
 .. toctree::
    :maxdepth: 2
