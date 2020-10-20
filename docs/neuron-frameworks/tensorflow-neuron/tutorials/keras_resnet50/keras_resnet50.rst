@@ -144,8 +144,9 @@ framework-to-Neuron overhead.
 
 The file batch.log now contains the results for each batch size.
 
-**Note**: the results are based on Neuron 1/27/20 release. These will
-continue improve as we increase Neuron performance.
+.. note::
+  the results are based on Neuron 1/27/20 release. These will
+  continue improve as we increase Neuron performance.
 
 .. code:: bash
 
