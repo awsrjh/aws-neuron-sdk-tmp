@@ -12,7 +12,7 @@ tools that is useful to both user and AWS for issue resolution. The tool
 gathers log files and other system information. If being used to supply
 that info to AWS, the tool will redact proprietary and confidential
 information. The GatherInfo tool is supplied in source code form -
-available here: `Neuron Gatherinfo <https://github.com/aws/aws-neuron-sdk/tree/master/src/neuron-gatherinfo/>`__
+available here: `Neuron Gatherinfo <../../../../guide/neuron-tools/neuron-gatherinfo/>`__
 
 The tool enables developers to gather compiler and inference/runtime
 logs. Additionally, the common usage is from within one of the supported
@@ -24,7 +24,7 @@ Steps Overview:
 ~~~~~~~~~~~~~~~
 
 1. Obtain a copy of neuron-gatherinfo.py from
-   `Neuron Gatherinfo <https://github.com/aws/aws-neuron-sdk/tree/master/src/neuron-gatherinfo/>`__
+   `Neuron Gatherinfo <../../../../guide/neuron-tools/neuron-gatherinfo/>`__
 2. Install into a location in your $PATH or into a location from where
    you can launch the script
 3. Use with compile and/or runtime environments
