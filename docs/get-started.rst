@@ -5,20 +5,18 @@ Getting started
 
 Neuron SDK's documentation provide the information needed to enable you
 start developing and deploying your ML inference application, depending
-if you are a first time user or if you are looking for spcific topic
-documenattion, this section provide you with "Getting Started"
-information you need to quickly navigate your way into your Neuron ML
-application.
+if you are a first time user or if you are looking for specific topic documentation, this section provide you with the
+information you need to quickly navigate your way into using Neuron for your ML applications.
 
 First time user
 ---------------
 
-If you are a first-time-user of Neuron, the following steps are
+If you are a first-time-user, the following steps are
 recommended for you to get started with Neuron:
 
 #. Run your first Neuron ML application by following the instructions in
    one of the following Getting Started tutorials to get familiar with
-   Neuron develeopment flow of your ML framework of prefrence:
+   Neuron development flow of your ML framework of choice:
 
    -  :ref:`tensorflow-resnet50`
    -  :ref:`pytorch-restent50`
@@ -28,12 +26,12 @@ recommended for you to get started with Neuron:
 
    -  Learn :ref:`neuron-fundamentals` : such as
       :ref:`neuron-data-types`, :ref:`neuron-batching` and
-      :ref:`neuroncore-pipeline`, learning Neuron fundenetals will help
+      :ref:`neuroncore-pipeline`, learning Neuron fundamentals will help
       you utilize Neuron to develop a highly optimized ML application.
    -  Get familiar with :ref:`neuron-cc`,\ :ref:`neuron-runtime` and
       :ref:`neuron-tools` by going over the overview sections and
       briefly reading about the supported features and capabilities of
-      Neuron Compiler,Runtime and Tools.
+      Neuron Compiler, Runtime and Tools.
 
 #. Deploy Neuron ML application at scale by learning how to tune,
    optimize and deploy your ML application at scale by following the
@@ -92,7 +90,7 @@ neuron application:
    -  Get familiar with :ref:`neuron-cc`,\ :ref:`neuron-runtime` and
       :ref:`neuron-tools` by going over the overview sections and
       briefly reading about the supported features and capabilities of
-      Neuron Compiler,Runtime and Tools.
+      Neuron Compiler, Runtime and Tools.
 
 #. Learn how to optimize your application by going over the HowTo guides
    at :ref:`performance-optimization` .
